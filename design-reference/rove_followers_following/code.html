@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Manrope:wght@200..800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&amp;family=Inter:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#f9d8ff","inverse-surface":"#3a2b40","surface-container-low":"#feefff","on-primary":"#ffffff","on-surface-variant":"#4c4451","surface-container-high":"#f8e1fd","on-secondary-container":"#734e7e","on-secondary-fixed-variant":"#5c3968","on-primary-container":"#deb8ff","on-error-container":"#93000a","on-background":"#24162a","on-secondary":"#ffffff","surface-container-highest":"#f2dbf7","tertiary-fixed":"#ffd9de","on-primary-fixed":"#2c0050","primary-fixed-dim":"#deb7ff","error":"#ba1a1a","secondary-fixed-dim":"#e4b7ef","inverse-on-surface":"#fdebff","on-tertiary":"#ffffff","on-surface":"#24162a","on-primary-fixed-variant":"#622698","surface-tint":"#7b42b1","surface-variant":"#f2dbf7","on-tertiary-fixed-variant":"#8d0d3a","surface":"#fff7fc","outline":"#7d7483","tertiary-fixed-dim":"#ffb2be","outline-variant":"#cec3d3","on-secondary-fixed":"#2d0c3a","secondary":"#765181","surface-container-lowest":"#ffffff","surface-container":"#fce7ff","primary":"#56178c","on-tertiary-container":"#ffb2bf","tertiary-container":"#9e1e45","primary-fixed":"#f0dbff","surface-dim":"#e9d3ee","on-error":"#ffffff","tertiary":"#7c0030","primary-container":"#6f35a5","surface-bright":"#fff7fc","secondary-container":"#f3c5fe","background":"#fff7fc","on-tertiary-fixed":"#3f0015","inverse-primary":"#deb7ff","error-container":"#ffdad6"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-lg":"2rem",gutter:"1.5rem","space-lg":"1.5rem","space-xl":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem",margin:"2rem","space-md":"1rem"},fontFamily:{"body-lg":["Inter"],"display-lg":["Manrope"],"body-md":["Inter"],"headline-lg":["Manrope"],"headline-xl":["Manrope"],"label-lg":["DM Sans"],"label-sm":["DM Sans"],"label-md":["DM Sans"],"headline-sm":["Manrope"],"body-sm":["Inter"]},fontSize:{"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}],"display-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-lg":["15px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"500"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(46,32,52,0.04)]"><div class="flex flex-col"><div class="pt-space-lg px-gutter pb-space-md"><div class="flex items-center gap-space-sm"><img alt="ROVE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VgYSErIft0Qw1xqT6mHuDLwG3MDvs4EMJTpbGc2voZyhuRKusjenJhpHwTyKtPuu3S3C1IzgtB6uvFI-RFhM6oppf17JqpmvL5BTfoFQaclpjL9SA-Ixq4sfhrp-RicHaAuybqxCS-4E_2EKe_Efd0eKY9HoAGo3hkTsVAoInuaF6c2n8LCutx9ZMeiJP_WFvi_bzp0_QAyDCSSikKRKZjC5d1RoUROv19sfixiFLyqZPwbxv0HB5RI00"/><span class="font-headline-lg text-headline-lg font-bold tracking-tight text-primary">ROVE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-tight">Your people. Your perspective.</p></div><div class="px-space-md my-space-xs"><a class="flex items-center justify-center gap-space-sm w-full py-space-sm px-space-md rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_4px_20px_-2px_rgba(46,32,52,0.12)] hover:bg-primary transition-colors" data-path="create-post" href="#"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>Create Post</span></a></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-xs" data-active-classes="bg-surface-container text-primary font-bold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="home" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-lg text-label-lg">Home</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="explore" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">explore</span><span class="font-label-lg text-label-lg">Explore</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reels" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">movie</span><span class="font-label-lg text-label-lg">Reels</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="messages" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-lg text-label-lg">Messages</span></div><span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm font-bold">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Notifications</span></div><span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">5</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="saved" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">bookmark</span><span class="font-label-lg text-label-lg">Saved</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="profile" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-lg text-label-lg">Profile</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></div></a></nav></div><div class="p-space-md m-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MVMBAgXoBuVyD0mHxI3OfH3OriKy92oIjJ_8Broab7K8Ygx7MRHAqTAUWTGdiLpySBSJwwC9t2kO7XAG5dnXibwya0QtqvNCPzY1TLm1gjpax7h9idNYE8O7RK-NdIvvMGnyJTElAed3qQtruvqwYN8KczySWfHY2suo1CVk03SZPseKbOhgGC8brXAEZQLx2n5dDGPHiN_bAZ--2qUi217y10hFvkFoGeLV1kaXun9pHuOkS-CGEg"/><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Elena Vance</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">@elena_rove</span></div></div><button aria-label="Switch account or logout" class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors shrink-0" type="button"><span class="material-symbols-outlined text-[20px]">swap_horiz</span></button></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 z-40 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(46,32,52,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-2 bg-surface-container-lowest rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary-container shadow-[0_1px_4px_rgba(46,32,52,0.03)]" placeholder="Search people, posts, hashtags..." type="search"/></div></div><div class="flex items-center gap-space-md"><a aria-label="New Post" class="p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="create-post" href="#"><span class="material-symbols-outlined text-[22px]">edit_square</span></a><a aria-label="Notifications" class="relative p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary"></span></a><a aria-label="Direct Messages" class="p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="messages" href="#"><span class="material-symbols-outlined text-[22px]">chat_bubble</span></a><div class="h-6 w-[1px] bg-outline-variant/30 mx-space-xs"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MVMBAgXoBuVyD0mHxI3OfH3OriKy92oIjJ_8Broab7K8Ygx7MRHAqTAUWTGdiLpySBSJwwC9t2kO7XAG5dnXibwya0QtqvNCPzY1TLm1gjpax7h9idNYE8O7RK-NdIvvMGnyJTElAed3qQtruvqwYN8KczySWfHY2suo1CVk03SZPseKbOhgGC8brXAEZQLx2n5dDGPHiN_bAZ--2qUi217y10hFvkFoGeLV1kaXun9pHuOkS-CGEg"/></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-gutter py-space-lg flex flex-col gap-space-lg">
+<!-- Top Nav / Breadcrumbs & Context Back -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<a class="flex items-center gap-1 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-0.5 transition-transform">arrow_back</span>
+<span>Elena Vance</span>
+</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">Connections</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container-low font-label-sm text-label-sm shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Share Profile</span>
+</button>
+<button aria-label="More Options" class="w-8 h-8 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-primary flex items-center justify-center shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Editorial Header & Identity Banner -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-lg relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-secondary-container/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex items-start gap-space-md z-10">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-full object-cover ring-2 ring-primary-container/20 p-0.5 bg-surface-container-lowest shadow-sm" data-alt="Editorial close-up portrait of Elena Vance, a thoughtful Scandinavian visual curator with warm studio lighting, subtle muted plum shadows, high-end photography, neutral expression, and soft lens flare." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAebvTdwOuxAa0adn_UQRFisDlGgBroJoJ9aEV9rLPFHB78O4BTgZNzmCQ3VzTvafsdi9snwkur_JPTrSihtEFdnUJC-0DBwe6ISuw3GBn6U4p8AiCLQUwaNw7Pd0p-ZZJtFYRWso51DCWsCBF3RY4bW16fufZCwUiJL7Hx2pJHQKdwHICE91DSCo9dEhazRBobcLEHoRDMDKawvlWn3NYX7qpFHNP8upZw5XwO7x9c62FJZ8fOuhuzRQ"/>
+<span class="absolute bottom-0 right-0 w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">Connections</h1>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary-container font-label-sm text-label-sm font-semibold">Active Circle</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">The people who make your world a little smaller.</p>
+<div class="flex items-center gap-space-md mt-3 text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface font-bold">48.2k</span>
+<span>Followers</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface font-bold">892</span>
+<span>Following</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface font-bold">184</span>
+<span>Perspectives</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Context Action -->
+<div class="flex items-center gap-space-sm z-10 shrink-0">
+<div class="flex -space-x-2 mr-2">
+<img class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-lowest shadow-sm" data-alt="Portrait of an artist collaborator in minimal natural lighting with warm plum tones and serene expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFafgyvlZIVVE2sLDhbM29FrUtBh4yZ47mnej_FxH4JRIPIzmLxGQXXIRUVBtoG7o0VtCqOmyaZVpdbCXRBFZKJY12nnG0p3j2ACUus4sqjy5Hjxq_liVJvr-YY-c85umC7IuQ47BoOcmTgiVcE5ysTvcrrVYNihRXM4BmNej5Skmmv-PHop3gwmkWJhRJh4lj9-HtavzrnQoKHfUXnHRwEXga9TcLLyyq-O717dy8_6E4TplWJFfXzA"/>
+<img class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-lowest shadow-sm" data-alt="Close up portrait of modern aesthetic photographer with rim lighting in muted lilac ambience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBax-B6tBjrw1FIcrgsf1yXilUmSe8yxfDLg-ZcJyWe4yTs1XT4ARx4ED-9ZHVr4JhsGcrXHD-acRlqFn7RDqSrakUx5dR9aYPZdz3U-dCrK77c7dJxVh2BvH9bxY9wRO8Rm3Myxek7UevKJlAXKFlvgMAS6bco5LaOtv15WSBYjT8TUufknNf7p9wZ6Ea6TdjD2zd6mFLKGYW8WLDoa5m4cSU0CQ3nWknLW6Q-_PegGa0M8NxRwH9MAQ"/>
+<img class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-lowest shadow-sm" data-alt="Creative documentary filmmaker profile in subtle monochromatic violet lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyddX8oRPaFxiyQONFeKzDE7hN-ZSaf02NRrONUkfQACjYVTzyI4pgNNLR4lwIljUnY272HTC_29tFiyGocEY7v8O5vvlCzYEMNPd70dZpitjFh14HeZRxLdnrxtv6pqjJoPZ3fmZ5K0M_VCjcVnTxaf3LC4qXdY2If19CwWSiQTbcJVIdUR7Z-VwTawb93c-q9ti1VSNi_Ue_ZfpbBHIgw14_QVU9gfWtZV_-BIPqu4vKeJr2wLJ9KQ"/>
+<div class="w-8 h-8 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm flex items-center justify-center font-bold ring-2 ring-surface-container-lowest shadow-sm">
+            +14
+          </div>
+</div>
+<button class="px-4 py-2 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-semibold hover:bg-secondary-container transition-colors" type="button">
+          Manage Circles
+        </button>
+</div>
+</div>
+<!-- Main Two-Column Structure -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Primary Column: Tabs, Controls & User List -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Tab Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-1.5 shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-1">
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg bg-surface-container text-primary font-label-lg text-label-lg font-bold shadow-sm transition-all" type="button">
+<span>Followers</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">48.2k</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-lg text-label-lg transition-colors" type="button">
+<span>Following</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium">892</span>
+</button>
+</div>
+<div class="hidden sm:flex items-center gap-2 pr-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span>618 active now</span>
+</div>
+</div>
+<!-- Filter Chips Rail -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+<button class="shrink-0 px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-medium shadow-sm" type="button">
+            All Followers
+          </button>
+<button class="shrink-0 px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md font-medium shadow-sm transition-all" type="button">
+            Mutual Connections (142)
+          </button>
+<button class="shrink-0 px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md font-medium shadow-sm transition-all" type="button">
+            Recently Followed
+          </button>
+<button class="shrink-0 px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md font-medium shadow-sm transition-all" type="button">
+            Verified Creators
+          </button>
+<button class="shrink-0 px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md font-medium shadow-sm transition-all" type="button">
+            Close Friends
+          </button>
+</div>
+<!-- Search & Sorter Utility Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="relative w-full sm:max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full pl-9 pr-8 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" placeholder="Search people by name, username, or interests..." type="text"/>
+<button aria-label="Clear Search" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-medium transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">sort</span>
+<span>Sort: Most Interacted</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Followers Card List -->
+<div class="flex flex-col gap-space-sm">
+<!-- User Row 1: Marcus Lindqvist -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Editorial medium-format portrait of Marcus Lindqvist, an outdoor alpine photographer in textured dark wool jacket with dramatic snowy mountain peaks blurred in the background, cool atmospheric lighting with deep magenta and plum shadow tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmMVoFxzMjN60ITqew4mOAhKQ319WQFR5KxIgw_4MWa3TD6zQelV-c9pSAfxgO6TvR1WkRgO7AVlrqZvtDQt5vfiuruunzT_CsrKL8pJMTaL5m2pZRSS4BMAwTR_KPQ9PukTe2wK322SgTYr0VSRgzBY4Em9wxLY-7se5VudS3rhq8Q_onfwJ0bfsLDnyS1OcS8ltQKSbSIeHzdVd67zk6P45DbVXomM47NJY55yFV28ThK73iVXKnMQ"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm" title="Verified Creator">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold hover:text-primary transition-colors cursor-pointer truncate">Marcus Lindqvist</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">@marcus_lens</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-1">Visual Director &amp; Alpine Photographer • Dolomites &amp; Stockholm</p>
+<div class="flex items-center gap-1.5 mt-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">group</span>
+<span class="truncate">Followed by <span class="font-medium text-on-surface">sophia.studio</span>, <span class="font-medium text-on-surface">kai_film</span>, and 18 others</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end sm:self-center">
+<button class="min-w-[108px] px-4 py-2 rounded-xl bg-surface-container-low text-primary hover:bg-error-container hover:text-on-error-container font-label-md text-label-md font-semibold transition-all group/btn" onmouseenter="this.querySelector('span').innerText = 'Unfollow'" onmouseleave="this.querySelector('span').innerText = 'Following'" type="button">
+<span>Following</span>
+</button>
+<button aria-label="Action options" class="w-9 h-9 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- User Row 2: Sophia Chen -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Editorial daylight portrait of ceramicist Sophia Chen holding a sculpted earthen vase in Copenhagen pottery studio, soft natural Scandinavian window lighting, subtle earthy beige and muted plum undertones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWEYCqxbgNiE1qJLpPEZjCMFgRMGfy8Fz-F8eZwYm4A8-qCrrXiFDm-hZUyhUCLVt605s4SZwDS57cl4ghM0fs8gh3NsSWRoFGQ2Xt9zPidsf91huMZTqppQkYOeUarK3rcGz0wvsLEHdS-Hj640CVoX8QsKsilPrHkKR4mJv4y0aYMfUGsoTW3X6lllAfrHInIALFo4Jau9vbzvlCOeEyBtNd02uKx_1sgkRysjwlEgxb7pMALjLDig"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm" title="Verified Creator">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold hover:text-primary transition-colors cursor-pointer truncate">Sophia Chen</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">@sophia.studio</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-1">Ceramicist &amp; Visual Archivist • Copenhagen</p>
+<div class="flex items-center gap-1.5 mt-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">group</span>
+<span class="truncate">Followed by <span class="font-medium text-on-surface">matteo_clay</span> and 12 others</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end sm:self-center">
+<button class="min-w-[108px] px-4 py-2 rounded-xl bg-surface-container-low text-primary hover:bg-error-container hover:text-on-error-container font-label-md text-label-md font-semibold transition-all" onmouseenter="this.querySelector('span').innerText = 'Unfollow'" onmouseleave="this.querySelector('span').innerText = 'Following'" type="button">
+<span>Following</span>
+</button>
+<button aria-label="Action options" class="w-9 h-9 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- User Row 3: Kai Tanaka -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Candid portrait of cinematographer Kai Tanaka with 35mm film camera slung across shoulder in Tokyo evening neon ambience, wet asphalt reflections, deep magenta and violet tones, cinematic depth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrDv7b7Tm8DaeyU7GOUxppNxM8EVKSoYsGo7i4X6rI48EG5fpTNvQs4tBf5BC3eDFcS8PMGcAOzfQAdZeyLEjHqZRA8KMn7RXsC_1It6adUI5VxMkGzw-QDKAeFWjhfTqxm4twCHwYXytPDzpOotoiSXYYllobzxfoxWuAr_11pGyNzL7UV7rObh_iZesr5IXTy6WCa9_-7_z86wiqLvyzf5CIM-x_zi3OlEBkPQ4NRy5h-9tNXj7qYA"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold hover:text-primary transition-colors cursor-pointer truncate">Kai Tanaka</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">@kai_film</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-1">Cinematographer &amp; Documentary Filmmaker • Tokyo</p>
+<div class="flex items-center gap-1.5 mt-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">group</span>
+<span class="truncate">Followed by <span class="font-medium text-on-surface">marcus_lens</span></span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end sm:self-center">
+<button class="min-w-[108px] px-4 py-2 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm transition-all flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Follow</span>
+</button>
+<button aria-label="Action options" class="w-9 h-9 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- User Row 4: Astrid Lindholm -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Editorial Arctic environmental portrait of Astrid Lindholm in deep purple insulated parka against polar twilight sky in Tromso Norway, crystalline snow crystals in air, sharp clarity, serene expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaxf6ATHO96beoSe66l6qJqhKQFnqthowrOsp340gR6yYIsO8Au4qXAH4mglC_OppajhpEQt3o1NNLpwFJw0UUjIFweORxAlHiw1Ui9_liD8cQIaoQr0DCo56xuCcK0wDcXvyZAikpF6_jvLogB65Lgz2zDAq1teau2YfQms8vY3ZpbJPaEuGhHPggfys3DsS6VOFumlKOJffDvjrW0-s7K9oD7l9Abf4NjoU-7k36DN_E_GLF8W3hFA"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm" title="Verified Creator">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold hover:text-primary transition-colors cursor-pointer truncate">Astrid Lindholm</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">@astrid_polar</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-1">Arctic expedition photographer &amp; marine naturalist • Tromsø, Norway</p>
+<div class="flex items-center gap-1.5 mt-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">group</span>
+<span class="truncate">Followed by <span class="font-medium text-on-surface">liam_analog</span> and 6 others</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end sm:self-center">
+<button class="min-w-[108px] px-4 py-2 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm transition-all flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+<span>Follow Back</span>
+</button>
+<button aria-label="Action options" class="w-9 h-9 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- User Row 5: Matteo Rossi -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Portrait of Matteo Rossi in minimalist Milan architectural design studio, wearing dark turtleneck, warm afternoon Italian sun casting geometric shadows, subtle purple-plum tint in dark tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZnBwhGbRRB8gE6-6eWgduOE6CfXHx8jIkrf5Cp2sqetWoUU6Fj2--dYrJpe2ewfabhqjJiIaVTiIGeVqQvEPnfmXDrjCgVTGAL1adE37DjMJI6LocPXC_KentMQq15oWtHggSZV6Lhs9fs_OM5zuLRL3YfZWalwpZthn4iCADRwClixkS626uUI15al0ZWh40_lYUx5Ospa9rS1EDu3lRikZ93E2zRXx684-M0XtPw0woLpCtTdfa0w"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold hover:text-primary transition-colors cursor-pointer truncate">Matteo Rossi</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">@matteo_clay</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-1">Architectural ceramics &amp; tactile surfaces • Milan</p>
+<div class="flex items-center gap-1.5 mt-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">group</span>
+<span class="truncate">Followed by <span class="font-medium text-on-surface">elena_rove</span> and <span class="font-medium text-on-surface">sophia.studio</span></span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end sm:self-center">
+<button class="min-w-[108px] px-4 py-2 rounded-xl bg-surface-container-low text-primary hover:bg-error-container hover:text-on-error-container font-label-md text-label-md font-semibold transition-all" onmouseenter="this.querySelector('span').innerText = 'Unfollow'" onmouseleave="this.querySelector('span').innerText = 'Following'" type="button">
+<span>Following</span>
+</button>
+<button aria-label="Action options" class="w-9 h-9 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- User Row 6: Amara O'Connor -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Editorial portrait of Amara O'Connor standing before raw concrete brutalist Dublin library facade, overcast cool sky, stylish black spectacles, modern editorial typography vibe, muted plum grading." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhUExhlRNRGnLrhVZf00dVH7JDety5Jk2VxydiK7imR6dC_GMzbG3HscT6tbbJfF0QdbFeVB8xI8fmxpAxp0oq8Klcz-fkCNGfRxQyKGWhxzwnpXBVYtuZ1HcaQF2Tp4z3MDBlyGOtjoMsZCUiBar1PydUtQlbYihLcuIz-MAB36lfg5wXyCZWlswlEqEiNMqG8D_Np7C4wz7_GH5GGF2Y2kyO318znDN-l01tQSOeqi25AmaP901e7A"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold hover:text-primary transition-colors cursor-pointer truncate">Amara O'Connor</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">@amara_arch</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-1">Brutalist architecture research &amp; editorial curator • Dublin</p>
+<div class="flex items-center gap-1.5 mt-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm font-semibold">New follower • 2h ago</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end sm:self-center">
+<button class="min-w-[108px] px-4 py-2 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm transition-all flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Follow</span>
+</button>
+<button aria-label="Action options" class="w-9 h-9 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- User Row 7: Julian Lin -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Portrait of Julian Lin in Pacific Northwest coastal forest carrying heavy wooden tripod, moody Pacific fog and towering pines, soft cool atmospheric light with violet tinted shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCRuubiuuOX2FMksmEKuwg0pv1oHiejQTzAyP-OBq8d88C4OE1CwEGSl3ZJu4eKKwIbQ3UeKsWdkfvY8QsHtEcKBcautkk-jvXcA0UXjXxwwoYvUKGBbMIp5UPk7F5yVHIJqFDrjiEERRuXTVcM_-1ar1I3D_ykTQwiUb3ZdwZoLmUcPWxmPWju85HwEr_KPX6uYUYXBGopjBzHkF2awIL7VuqPOUKaAiCvJ4XH60HGQPJ_99jQHRM3A"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold hover:text-primary transition-colors cursor-pointer truncate">Julian Lin</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">@julian_lin</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-1">Large format analog landscape photographer • Vancouver</p>
+<div class="flex items-center gap-1.5 mt-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">group</span>
+<span class="truncate">Followed by <span class="font-medium text-on-surface">kai_film</span> and 4 others</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end sm:self-center">
+<button class="min-w-[108px] px-4 py-2 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm transition-all flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Follow</span>
+</button>
+<button aria-label="Action options" class="w-9 h-9 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pagination / Infinity indicator -->
+<div class="p-space-md flex flex-col items-center justify-center gap-2">
+<button class="px-6 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container text-label-md font-label-md font-semibold shadow-sm transition-all flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px] animate-spin text-primary">progress_activity</span>
+<span>Load More Followers</span>
+</button>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Showing 7 of 48,219 followers</span>
+</div>
+</div>
+<!-- Auxiliary Rail: Insights & Recommendations -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Connection Highlights Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Connection Highlights</h3>
+<span class="material-symbols-outlined text-secondary text-[20px]">insights</span>
+</div>
+<!-- Quick Stats Grid -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mutual Friends</span>
+<span class="font-headline-lg text-headline-lg font-bold text-primary">142</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+                +12 this month
+              </span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">New this week</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">84</span>
+<span class="font-label-sm text-label-sm text-secondary-container text-primary font-bold">
+                98% verified
+              </span>
+</div>
+</div>
+<!-- Visual Activity Sparkline -->
+<div class="flex flex-col gap-1 pt-1">
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant">
+<span>Follower growth trajectory</span>
+<span class="font-semibold text-primary">+8.4%</span>
+</div>
+<svg class="w-full h-12 text-primary" fill="none" viewbox="0 0 280 48">
+<path d="M0 40C20 38 40 32 60 30C80 28 100 36 120 25C140 14 160 22 180 18C200 14 220 19 240 8C255 1 270 6 280 4" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0 40C20 38 40 32 60 30C80 28 100 36 120 25C140 14 160 22 180 18C200 14 220 19 240 8C255 1 270 6 280 4V48H0V40Z" fill="currentColor" fill-opacity="0.08"></path>
+</svg>
+</div>
+</div>
+<!-- Suggested For Elena -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Suggested for Elena</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Curated based on your aesthetics</p>
+</div>
+<a class="text-primary hover:underline font-label-sm text-label-sm font-semibold" href="#">View All</a>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Suggestion 1 -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-10 h-10 rounded-full object-cover shrink-0 shadow-sm" data-alt="Portrait of Japanese woodworker Yuka Hashimoto in Kyoto studio with handcrafted joinery items, soft ambient warm light, fine artisanal aesthetic, muted plum shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArM45X3BeBR6hhSmdcdg1QjXW5Co-r4ZbkgnmlIpYROaH8fivvz4tdSqRKgsvkmmhiSGi4gV5SIj908Cc5An72Gum1AjcjNSlcqXkgG6Lfa9eAEYvdLfoQEYgtAzhVEWhh-L4h9t_yXqAn3UBipt0Kx_xMQo0KYqb__U9rzKdX9RGZuzU05C2VPBqtGmKihM7dxBKynpEiPKcbbqtkCF2kpBKm-u-adzJAFg1hRBlHCDL994EK1Y_JeA"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Yuka Hashimoto</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">@yuka_craft</span>
+<span class="font-label-sm text-label-sm text-secondary truncate">Followed by kai_film</span>
+</div>
+</div>
+<button class="shrink-0 px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm font-bold hover:bg-primary hover:text-on-primary transition-colors" type="button">
+                Follow
+              </button>
+</div>
+<!-- Suggestion 2 -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-10 h-10 rounded-full object-cover shrink-0 shadow-sm" data-alt="Editorial portrait of Soren Kjaer, Copenhagen interior architect, natural muted light in minimalist showroom, neutral clothing, deep plum and slate palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiHEIMLsVRLoMYk76QDPSspKeHUsGHeGMQ-jDxLRIX9p7wFsm2GZRbMG2hDjPhNSU-jN0-F-219tZxGx2nh1qlUAlZSZ0NaV3LPOEXJyREQeTFyLUlV6dKp2xlyWWaDCk8sfbPS-01PfXXfKfjqy38ia-RIiT7j-tJjOHeeY51vjMECPU2ixi8G5GGIV9-U2VMKXHr4jjXPMiVHm60cZ01t_l-JJ8n92WV170baFQwFMCP2Dj5dMsdDA"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Søren Kjær</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">@soren_kjaer</span>
+<span class="font-label-sm text-label-sm text-secondary truncate">Followed by sophia.studio</span>
+</div>
+</div>
+<button class="shrink-0 px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm font-bold hover:bg-primary hover:text-on-primary transition-colors" type="button">
+                Follow
+              </button>
+</div>
+<!-- Suggestion 3 -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-10 h-10 rounded-full object-cover shrink-0 shadow-sm" data-alt="Portrait of graphic artist Clara Moreau in Paris design atelier, soft directional window lighting, art prints in background, rich moody plum grading." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjRynF3aRXjshWY0zHLNBn-GYjYlc8u-T6oYbnJdVWFfKGHY-VB6WWFqTft67Wrjo2GvYW7G4Z1kQeeLohzJmoWqk9toGkeBZc_mr6C8VaqkRy6XqXFB7STEPFSmlSv6nQldLeW-bMJkbT9AgVkAWkvsTww3Q6t6BMPSBKplBkUcvGArOoRV-x8VTQd9A2s_VCPQcjFYk1ij91QBMYBENBOm27v3vtqBWxPcPYZHKkbpRfQ6T9-CyrRg"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Clara Moreau</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">@moreau_clara</span>
+<span class="font-label-sm text-label-sm text-secondary truncate">New in Curators</span>
+</div>
+</div>
+<button class="shrink-0 px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm font-bold hover:bg-primary hover:text-on-primary transition-colors" type="button">
+                Follow
+              </button>
+</div>
+</div>
+</div>
+<!-- Privacy & Circles Notice -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">lock</span>
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Circle Privacy Notice</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Only approved followers can view your archived perspectives in Private Circles. Manage in <a class="text-primary hover:underline font-medium" href="#">Settings</a>.
+            </p>
+</div>
+</div>
+<!-- Mini Footer / Metadata -->
+<div class="px-space-xs flex flex-wrap items-center gap-x-3 gap-y-1 text-outline font-label-sm text-label-sm">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#">Terms of Perspective</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#">Safety Center</a>
+<span>•</span>
+<span>© 2025 ROVE Inc.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for tab switching and search demonstration
+  document.querySelectorAll('input[type="text"]').forEach(input => {
+    input.addEventListener('focus', function() {
+      this.parentElement.classList.add('ring-2', 'ring-primary-container');
+    });
+    input.addEventListener('blur', function() {
+      this.parentElement.classList.remove('ring-2', 'ring-primary-container');
+    });
+  });
+</script></main></div></body></html>

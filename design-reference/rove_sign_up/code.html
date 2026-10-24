@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=1440, initial-scale=1.0" name="viewport"/>
+<title>ROVE - Sign Up</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              plum: '#4A2856',
+              purple: '#6F35A5',
+              lavender: '#F3EAFE',
+              'lavender-soft': '#FBF7FF',
+              bg: '#FAF9FC',
+              text: '#2E2034',
+              secondary: '#8C8193',
+              border: '#E8E1ED'
+            }
+          },
+          fontFamily: {
+            manrope: ['Manrope', 'sans-serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#FAF9FC] text-[#2E2034] font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-[#F3EAFE] selection:text-[#6F35A5]">
+<!-- Top Minimal Header with Wordmark -->
+<header class="w-full max-w-[1440px] mx-auto px-12 py-7 flex items-center justify-between">
+<a class="flex items-center gap-3 group" href="/login">
+<div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#4A2856] to-[#6F35A5] flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+<polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+</svg>
+</div>
+<div>
+<span class="font-manrope font-extrabold text-2xl tracking-tight text-[#4A2856]">ROVE</span>
+<span class="block text-[11px] font-medium tracking-wider text-[#8C8193] uppercase -mt-1">Perspective Archive</span>
+</div>
+</a>
+<div class="flex items-center gap-2 text-sm text-[#8C8193]">
+<span>Already have an account?</span>
+<a class="font-semibold text-[#6F35A5] hover:text-[#4A2856] hover:underline px-3.5 py-1.5 rounded-lg hover:bg-[#F3EAFE] transition-all" href="/login">Log In</a>
+</div>
+</header>
+<!-- Main Auth Container (Split 2-Column Desktop Viewport 1440x1000) -->
+<main class="w-full max-w-[1240px] mx-auto px-6 py-2 flex-1 flex items-center justify-center">
+<div class="w-full bg-white rounded-3xl border border-[#E8E1ED] shadow-[0_12px_40px_rgba(74,40,86,0.06)] overflow-hidden grid grid-cols-12 min-h-[720px]">
+<!-- Left Column: Editorial Brand & Creator Community Spotlight -->
+<div class="col-span-6 bg-gradient-to-br from-[#4A2856] via-[#5B2E6E] to-[#6F35A5] p-12 text-white flex flex-col justify-between relative overflow-hidden">
+<!-- Ambient blurred orbs -->
+<div class="absolute -top-20 -left-20 w-80 h-80 rounded-full bg-white/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[#6F35A5]/40 blur-3xl pointer-events-none"></div>
+<!-- Upper Tagline -->
+<div class="relative z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs font-medium tracking-wide uppercase text-white/90 mb-5">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            Open Creator Registration
+          </div>
+<h1 class="font-manrope text-4xl font-extrabold tracking-tight leading-[1.2] mb-3">
+            Join the visual archive.
+          </h1>
+<p class="text-white/80 text-sm max-w-md leading-relaxed">
+            Create your portfolio journal, share high-res photographic stories, and engage in thoughtful dialogues without algorithms or engagement bait.
+          </p>
+</div>
+<!-- Visual Feature Bento Tiles -->
+<div class="relative z-10 my-6 space-y-3.5">
+<!-- Featured Curated Photo -->
+<div class="relative rounded-2xl overflow-hidden shadow-lg border border-white/15 aspect-[16/9] bg-black/25">
+<img alt="Misty Alpine Forest" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-4">
+<div class="flex items-center justify-between w-full">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full ring-2 ring-white/60 overflow-hidden bg-white/20">
+<img alt="Sophia Chen" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+</div>
+<div>
+<p class="text-xs font-bold text-white leading-tight">Sophia Chen</p>
+<p class="text-[10px] text-white/70">Ceramicist &amp; Archivist • Copenhagen</p>
+</div>
+</div>
+<span class="text-[11px] px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-md text-white border border-white/20">Featured Entry</span>
+</div>
+</div>
+</div>
+<!-- Platform Pillars Row -->
+<div class="grid grid-cols-3 gap-2.5">
+<div class="p-3 rounded-xl bg-white/10 backdrop-blur-md border border-white/10 text-center">
+<div class="text-[#F3EAFE] text-base mb-1">✦</div>
+<div class="font-manrope font-bold text-xs">Full Quality</div>
+<div class="text-[10px] text-white/70">Zero image compression</div>
+</div>
+<div class="p-3 rounded-xl bg-white/10 backdrop-blur-md border border-white/10 text-center">
+<div class="text-[#F3EAFE] text-base mb-1">⎘</div>
+<div class="font-manrope font-bold text-xs">Chronological</div>
+<div class="text-[10px] text-white/70">No algorithmic feeds</div>
+</div>
+<div class="p-3 rounded-xl bg-white/10 backdrop-blur-md border border-white/10 text-center">
+<div class="text-[#F3EAFE] text-base mb-1">🔒</div>
+<div class="font-manrope font-bold text-xs">Private Circles</div>
+<div class="text-[10px] text-white/70">Full privacy boundary</div>
+</div>
+</div>
+</div>
+<!-- Left Footer Indicator -->
+<div class="relative z-10 flex items-center justify-between text-xs text-white/60 pt-3 border-t border-white/10">
+<span>“Your people. Your perspective.”</span>
+<span>Verified Creative Identity</span>
+</div>
+</div>
+<!-- Right Column: Registration Form -->
+<div class="col-span-6 p-10 lg:p-12 flex flex-col justify-between bg-white overflow-y-auto">
+<div class="max-w-[440px] w-full mx-auto">
+<!-- Form Header -->
+<div class="mb-6">
+<h2 class="font-manrope text-3xl font-bold tracking-tight text-[#2E2034] mb-1.5">Join ROVE</h2>
+<p class="text-sm text-[#8C8193]">Create your account and claim your visual perspective handle.</p>
+</div>
+<!-- OAuth Social Shortcut -->
+<button class="w-full h-11 px-4 mb-5 rounded-xl border border-[#E8E1ED] hover:border-[#6F35A5]/40 bg-white hover:bg-[#FAF9FC] text-[#2E2034] text-sm font-semibold flex items-center justify-center gap-3 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-[#6F35A5]/20" type="button">
+<svg class="w-5 h-5" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+<span>Sign up with Google</span>
+</button>
+<!-- Divider -->
+<div class="relative flex items-center justify-center mb-5">
+<div class="border-t border-[#E8E1ED] w-full"></div>
+<span class="bg-white px-3 text-xs uppercase tracking-wider text-[#8C8193] font-medium absolute">or register with email</span>
+</div>
+<!-- Registration Form -->
+<form class="space-y-3.5" onsubmit="event.preventDefault();">
+<!-- Full Name & Username Grid -->
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-xs font-semibold uppercase tracking-wider text-[#2E2034] mb-1" for="signup-name">Full Name</label>
+<input class="w-full h-10 px-3 rounded-xl border border-[#E8E1ED] bg-[#FAF9FC] focus:bg-white text-sm text-[#2E2034] placeholder-[#8C8193]/70 focus:outline-none focus:border-[#6F35A5] focus:ring-2 focus:ring-[#6F35A5]/20 transition-all font-medium" id="signup-name" name="fullname" placeholder="Elena Vance" required="" type="text" value="Elena Vance"/>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<label class="block text-xs font-semibold uppercase tracking-wider text-[#2E2034]" for="signup-handle">Username</label>
+<span class="text-[10px] font-semibold text-emerald-600 bg-emerald-50 px-1.5 py-0.2 rounded">Available</span>
+</div>
+<div class="relative">
+<span class="absolute left-3 top-2.5 text-xs text-[#8C8193]">@</span>
+<input class="w-full h-10 pl-7 pr-3 rounded-xl border border-[#E8E1ED] bg-[#FAF9FC] focus:bg-white text-sm text-[#2E2034] placeholder-[#8C8193]/70 focus:outline-none focus:border-[#6F35A5] focus:ring-2 focus:ring-[#6F35A5]/20 transition-all font-medium" id="signup-handle" name="handle" placeholder="handle" required="" type="text" value="elena_rove"/>
+</div>
+</div>
+</div>
+<!-- Email Address Input -->
+<div>
+<label class="block text-xs font-semibold uppercase tracking-wider text-[#2E2034] mb-1" for="signup-email">Email Address</label>
+<input class="w-full h-10 px-3 rounded-xl border border-[#E8E1ED] bg-[#FAF9FC] focus:bg-white text-sm text-[#2E2034] placeholder-[#8C8193]/70 focus:outline-none focus:border-[#6F35A5] focus:ring-2 focus:ring-[#6F35A5]/20 transition-all font-medium" id="signup-email" name="email" placeholder="elena@studio.design" required="" type="email" value="elena_vance@studio.design"/>
+</div>
+<!-- Password Input -->
+<div>
+<div class="flex items-center justify-between mb-1">
+<label class="block text-xs font-semibold uppercase tracking-wider text-[#2E2034]" for="signup-pass">Password</label>
+<span class="text-[10px] text-[#6F35A5] font-semibold">Strong (8+ chars, 1 symbol)</span>
+</div>
+<div class="relative">
+<input class="w-full h-10 px-3 pr-10 rounded-xl border border-[#E8E1ED] bg-[#FAF9FC] focus:bg-white text-sm text-[#2E2034] placeholder-[#8C8193]/70 focus:outline-none focus:border-[#6F35A5] focus:ring-2 focus:ring-[#6F35A5]/20 transition-all font-medium" id="signup-pass" name="password" placeholder="Create a strong password" required="" type="password" value="••••••••••••"/>
+<button class="absolute right-3 top-2.5 text-[#8C8193] hover:text-[#2E2034] focus:outline-none" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<!-- Strength meter bar -->
+<div class="flex gap-1.5 mt-1.5">
+<div class="h-1 flex-1 rounded-full bg-[#6F35A5]"></div>
+<div class="h-1 flex-1 rounded-full bg-[#6F35A5]"></div>
+<div class="h-1 flex-1 rounded-full bg-[#6F35A5]"></div>
+<div class="h-1 flex-1 rounded-full bg-[#E8E1ED]"></div>
+</div>
+</div>
+<!-- Confirm Password Input -->
+<div>
+<label class="block text-xs font-semibold uppercase tracking-wider text-[#2E2034] mb-1" for="signup-confirm-pass">Confirm Password</label>
+<div class="relative">
+<input class="w-full h-10 px-3 pr-10 rounded-xl border border-emerald-400 bg-white text-sm text-[#2E2034] focus:outline-none focus:ring-2 focus:ring-emerald-400/20 font-medium" id="signup-confirm-pass" name="confirmPassword" placeholder="Re-enter password" required="" type="password" value="••••••••••••"/>
+<span class="absolute right-3 top-2.5 text-emerald-600">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</span>
+</div>
+</div>
+<!-- Agreement Checkbox -->
+<div class="pt-1">
+<label class="flex items-start gap-2.5 cursor-pointer select-none">
+<input checked="" class="mt-0.5 w-4 h-4 rounded text-[#6F35A5] border-[#E8E1ED] focus:ring-[#6F35A5] focus:ring-offset-0" type="checkbox"/>
+<span class="text-xs text-[#8C8193] leading-relaxed">
+                  I agree to ROVE's <a class="text-[#6F35A5] hover:underline font-semibold" href="#">Terms of Service</a>, <a class="text-[#6F35A5] hover:underline font-semibold" href="#">Privacy Policy</a>, and editorial curation guidelines.
+                </span>
+</label>
+</div>
+<!-- Primary Action Button -->
+<div class="pt-2">
+<button class="w-full h-11 rounded-xl bg-[#6F35A5] hover:bg-[#4A2856] active:scale-[0.99] text-white text-sm font-semibold tracking-wide shadow-md shadow-[#6F35A5]/25 flex items-center justify-center gap-2 transition-all focus:outline-none focus:ring-2 focus:ring-[#6F35A5] focus:ring-offset-2" type="submit">
+<span>Create ROVE Account</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</form>
+</div>
+<!-- Form Bottom Links -->
+<div class="pt-4 border-t border-[#E8E1ED] text-center text-xs text-[#8C8193]">
+<p>Already a member of ROVE? 
+            <a class="text-[#6F35A5] hover:underline font-bold" href="/login">Log in to your account</a>
+</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Global Authentication Footer -->
+<footer class="w-full max-w-[1440px] mx-auto px-12 py-5 flex items-center justify-between text-xs text-[#8C8193]">
+<div class="flex items-center gap-6">
+<a class="hover:text-[#2E2034] transition-colors" href="#">Manifesto</a>
+<a class="hover:text-[#2E2034] transition-colors" href="#">Curation Standards</a>
+<a class="hover:text-[#2E2034] transition-colors" href="#">Safety Center</a>
+<a class="hover:text-[#2E2034] transition-colors" href="#">Privacy</a>
+</div>
+<div class="text-xs text-[#8C8193]">
+      ROVE Social Architecture • Version 4.2
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&family=Inter:wght@100..900&family=Manrope:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error-container":"#93000a","surface-tint":"#7b42b1","surface-variant":"#f2dbf7","secondary-fixed":"#f9d8ff","outline":"#7d7483","primary-fixed":"#f0dbff","on-secondary-container":"#734e7e","on-tertiary-fixed-variant":"#8d0d3a","primary-container":"#6f35a5","outline-variant":"#cec3d3","surface-container":"#fce7ff","on-surface":"#24162a","on-secondary":"#ffffff","tertiary-fixed-dim":"#ffb2be","surface":"#fff7fc","on-background":"#24162a","surface-container-lowest":"#ffffff","on-primary-fixed":"#2c0050","error":"#ba1a1a","on-primary-fixed-variant":"#622698","on-secondary-fixed":"#2d0c3a","surface-container-low":"#feefff","error-container":"#ffdad6","secondary":"#765181","inverse-on-surface":"#fdebff","secondary-container":"#f3c5fe","surface-container-highest":"#f2dbf7","on-primary-container":"#deb8ff","on-primary":"#ffffff","on-tertiary-container":"#ffb2bf","on-tertiary":"#ffffff","tertiary-container":"#9e1e45","on-surface-variant":"#4c4451","on-tertiary-fixed":"#3f0015","surface-container-high":"#f8e1fd","primary-fixed-dim":"#deb7ff","surface-bright":"#fff7fc","inverse-surface":"#3a2b40","surface-dim":"#e9d3ee","tertiary-fixed":"#ffd9de","background":"#fff7fc","primary":"#56178c","secondary-fixed-dim":"#e4b7ef","tertiary":"#7c0030","on-secondary-fixed-variant":"#5c3968","on-error":"#ffffff","inverse-primary":"#deb7ff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xs":"0.25rem","space-xl":"2.5rem","space-md":"1rem","gutter-lg":"2rem","gutter":"1.5rem","space-lg":"1.5rem","space-sm":"0.5rem","margin-mobile":"1rem","margin":"2rem"},fontFamily:{"headline-lg":["Manrope"],"headline-sm":["Manrope"],"label-md":["DM Sans"],"body-lg":["Inter"],"headline-xl":["Manrope"],"body-sm":["Inter"],"display-lg":["Manrope"],"body-md":["Inter"],"label-sm":["DM Sans"],"label-lg":["DM Sans"]},fontSize:{"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"500"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"display-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"label-lg":["15px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(46,32,52,0.04)]"><div class="flex flex-col"><div class="pt-space-lg px-gutter pb-space-md"><div class="flex items-center gap-space-sm"><img alt="ROVE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VgYSErIft0Qw1xqT6mHuDLwG3MDvs4EMJTpbGc2voZyhuRKusjenJhpHwTyKtPuu3S3C1IzgtB6uvFI-RFhM6oppf17JqpmvL5BTfoFQaclpjL9SA-Ixq4sfhrp-RicHaAuybqxCS-4E_2EKe_Efd0eKY9HoAGo3hkTsVAoInuaF6c2n8LCutx9ZMeiJP_WFvi_bzp0_QAyDCSSikKRKZjC5d1RoUROv19sfixiFLyqZPwbxv0HB5RI00"/><span class="font-headline-lg text-headline-lg font-bold tracking-tight text-primary">ROVE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-tight">Your people. Your perspective.</p></div><div class="px-space-md my-space-xs"><a class="flex items-center justify-center gap-space-sm w-full py-space-sm px-space-md rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_4px_20px_-2px_rgba(46,32,52,0.12)] hover:bg-primary transition-colors" data-path="create-post" href="#"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>Create Post</span></a></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-xs" data-active-classes="bg-surface-container text-primary font-bold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="home" href="#"><span class="font-label-lg text-label-lg">Home</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="explore" href="#"><span class="font-label-lg text-label-lg">Explore</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reels" href="#"><span class="font-label-lg text-label-lg">Reels</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="messages" href="#"><span class="font-label-lg text-label-lg">Messages</span><span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm font-bold">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="font-label-lg text-label-lg">Notifications</span><span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">5</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="saved" href="#"><span class="font-label-lg text-label-lg">Saved</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="font-label-lg text-label-lg">Profile</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="font-label-lg text-label-lg">Settings</span></a></nav></div><div class="p-space-md m-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MVMBAgXoBuVyD0mHxI3OfH3OriKy92oIjJ_8Broab7K8Ygx7MRHAqTAUWTGdiLpySBSJwwC9t2kO7XAG5dnXibwya0QtqvNCPzY1TLm1gjpax7h9idNYE8O7RK-NdIvvMGnyJTElAed3qQtruvqwYN8KczySWfHY2suo1CVk03SZPseKbOhgGC8brXAEZQLx2n5dDGPHiN_bAZ--2qUi217y10hFvkFoGeLV1kaXun9pHuOkS-CGEg"/><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Elena Vance</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">@elena_rove</span></div></div><button aria-label="Switch account or logout" class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors shrink-0" type="button"><span class="material-symbols-outlined text-[20px]">swap_horiz</span></button></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 z-40 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(46,32,52,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-2 bg-surface-container-lowest rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary-container shadow-[0_1px_4px_rgba(46,32,52,0.03)]" placeholder="Search people, posts, hashtags..." type="search"/></div></div><div class="flex items-center gap-space-md"><a aria-label="New Post" class="p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="create-post" href="#"><span class="material-symbols-outlined text-[22px]">edit_square</span></a><a aria-label="Notifications" class="relative p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary"></span></a><a aria-label="Direct Messages" class="p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="messages" href="#"><span class="material-symbols-outlined text-[22px]">chat_bubble</span></a><div class="h-6 w-[1px] bg-outline-variant/30 mx-space-xs"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MVMBAgXoBuVyD0mHxI3OfH3OriKy92oIjJ_8Broab7K8Ygx7MRHAqTAUWTGdiLpySBSJwwC9t2kO7XAG5dnXibwya0QtqvNCPzY1TLm1gjpax7h9idNYE8O7RK-NdIvvMGnyJTElAed3qQtruvqwYN8KczySWfHY2suo1CVk03SZPseKbOhgGC8brXAEZQLx2n5dDGPHiN_bAZ--2qUi217y10hFvkFoGeLV1kaXun9pHuOkS-CGEg"/></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Main Report Canvas Container -->
+<div class="w-full max-w-[820px] mx-auto px-gutter py-space-xl">
+<!-- Breadcrumb & Top Context -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md mb-space-sm">
+<a class="hover:text-primary transition-colors" href="#">Help & Safety</a>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+<span class="text-on-surface font-semibold">Report a Problem</span>
+</nav>
+<!-- Header Block -->
+<div class="mb-space-lg">
+<h1 class="font-headline-xl text-headline-xl font-bold tracking-tight text-on-surface mb-space-xs">
+        Report a Problem
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+        Help us keep ROVE safe, inspiring, and respectful for everyone. Tell us what is happening so our editorial moderation team can review it promptly.
+      </p>
+</div>
+<!-- Stepper Indicator -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg">
+<div class="flex items-center justify-between gap-space-md">
+<!-- Step 1: Completed -->
+<div class="flex items-center gap-space-sm flex-1">
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Step 1</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Select Content</span>
+</div>
+</div>
+<div class="h-0.5 w-10 bg-primary-container/20 rounded-full shrink-0"></div>
+<!-- Step 2: Active -->
+<div class="flex items-center gap-space-sm flex-1">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md font-bold shrink-0 shadow-[0_0_0_4px_rgba(243,234,254,0.9)]">
+            2
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Step 2 (Active)</span>
+<span class="font-label-md text-label-md font-bold text-primary truncate">Choose Reason</span>
+</div>
+</div>
+<div class="h-0.5 w-10 bg-surface-container-high rounded-full shrink-0"></div>
+<!-- Step 3: Upcoming -->
+<div class="flex items-center gap-space-sm flex-1 opacity-60">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-md text-label-md font-semibold shrink-0">
+            3
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Step 3</span>
+<span class="font-label-md text-label-md font-medium text-on-surface-variant truncate">Review & Submit</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Form Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-xl">
+<!-- Section 1: Content Type Selection -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+            1. Target Content Type
+          </label>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Target Context</span>
+</div>
+<div aria-label="Target Content Type" class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm" role="radiogroup">
+<!-- Item: Post / Perspective (Selected) -->
+<button class="group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container text-primary transition-all text-center" type="button">
+<span class="material-symbols-outlined text-[24px] mb-1" style="font-variation-settings: 'FILL' 1;">photo_library</span>
+<span class="font-label-md text-label-md font-bold">Post / Story</span>
+</button>
+<!-- Item: Comment -->
+<button class="group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all text-center" type="button">
+<span class="material-symbols-outlined text-[24px] mb-1">chat_bubble_outline</span>
+<span class="font-label-md text-label-md font-medium">Comment</span>
+</button>
+<!-- Item: User Account -->
+<button class="group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all text-center" type="button">
+<span class="material-symbols-outlined text-[24px] mb-1">person_outline</span>
+<span class="font-label-md text-label-md font-medium">User Profile</span>
+</button>
+<!-- Item: Direct Message -->
+<button class="group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all text-center" type="button">
+<span class="material-symbols-outlined text-[24px] mb-1">forum</span>
+<span class="font-label-md text-label-md font-medium">Direct Message</span>
+</button>
+</div>
+<!-- Selected Preview Context Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative w-14 h-14 rounded-lg overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Atmospheric dramatic photograph of sunburst breaking through dense mountain fog over jagged rocky peaks in the Italian Dolomites, warm rose-plum alpine lighting, sharp magazine aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeCpKDSMkBrqpisPXaGkGLglLbCyPykJBawerQ6z3Di5sJfqks65iAO4ebdO2RpeJDnyFBZC2fHy2ZrXN-bQAgNeT5_k1_nbLYOugzU5DmxBU9RQueEKBp53SofVt3hrynRrcTv_YcIDO5zLGcHxzhnECx5UmOFIl3eXlH2AqRYHKG83mIQ4dkE9GCIf-rHCQza7gKkqelVplWVnlJzLAw2FDcGifFFKnJ0zR8Xqh40f31ms_Mn-iCQw"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Post by @marcus_lens</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-primary font-medium">ID #rv-post-8821</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+                "Dolomites Sunrise Trek: Solitude at 2,800m" • Published 4 hours ago
+              </p>
+</div>
+</div>
+<button aria-label="Change target content" class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors shrink-0" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</section>
+<!-- Section 2: Reference Field -->
+<section class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-bold text-on-surface" for="reference_url">
+          Content URL or Reference ID
+        </label>
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">link</span>
+<input class="w-full pl-10 pr-space-md py-2.5 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="reference_url" placeholder="e.g. https://rove.social/post/..." type="text" value="https://rove.social/post/dolomites-sunrise-trek-8821"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automatically extracted from the selected perspective.</span>
+</section>
+<!-- Section 3: Reason for Report -->
+<section class="flex flex-col gap-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+            2. Why are you reporting this?
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Select the category that best captures the violation according to ROVE Community Guidelines.
+          </p>
+</div>
+<div aria-label="Reporting reason" class="flex flex-col gap-space-xs" role="radiogroup">
+<!-- Reason 1: Spam -->
+<label class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="pt-0.5">
+<input class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="report_reason" type="radio" value="spam"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">
+                Spam or automated bot activity
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Repetitive comments, fake engagement rings, phishing schemes, or commercial bulk links.
+              </span>
+</div>
+</label>
+<!-- Reason 2: Harassment (Selected Default) -->
+<label class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container text-on-surface cursor-pointer group transition-colors">
+<div class="pt-0.5">
+<input checked="" class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="report_reason" type="radio" value="harassment"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-primary">
+                  Harassment, bullying, or intimidation
+                </span>
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">Selected</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Targeted hostility, stalking, unauthorized disclosure of private data, threats, or unwanted repeated contact.
+              </span>
+</div>
+</label>
+<!-- Reason 3: Hate speech -->
+<label class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="pt-0.5">
+<input class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="report_reason" type="radio" value="hate_speech"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">
+                Hate speech or abusive content
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Slurs, institutional discrimination, glorification of violence, or promoting harm against protected groups.
+              </span>
+</div>
+</label>
+<!-- Reason 4: Impersonation -->
+<label class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="pt-0.5">
+<input class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="report_reason" type="radio" value="impersonation"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">
+                Impersonation or stolen identity
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Posing as another individual, visual artist, public figure, or unauthorized brand representation.
+              </span>
+</div>
+</label>
+<!-- Reason 5: Scam or fraud -->
+<label class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="pt-0.5">
+<input class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="report_reason" type="radio" value="scam"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">
+                Scam, fraud, or financial abuse
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Deceptive investment offers, unauthorized sales, counterfeit prints, or deceptive raffles.
+              </span>
+</div>
+</label>
+<!-- Reason 6: IP / Copyright -->
+<label class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="pt-0.5">
+<input class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="report_reason" type="radio" value="copyright"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">
+                Intellectual property or copyright infringement
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Unauthorized reposting of original photography, uncredited digital artwork, or license violation.
+              </span>
+</div>
+</label>
+<!-- Reason 7: Other -->
+<label class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="pt-0.5">
+<input class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="report_reason" type="radio" value="other"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">
+                Other issue
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Technical vulnerability, inappropriate age gating, or concerns not captured above.
+              </span>
+</div>
+</label>
+</div>
+</section>
+<!-- Section 4: Additional Details (Conditional) -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md font-bold text-on-surface" for="report_details">
+            Additional Details (Optional)
+          </label>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="char_counter">128 / 500 characters</span>
+</div>
+<textarea class="w-full p-space-md bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all resize-none" id="report_details" maxlength="500" placeholder="Tell us more about the issue, timestamps, or specific comments that will help our review team understand the situation..." rows="4">User continues to post unsolicited harassing commentary across multiple public perspectives despite being asked to stop.</textarea>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Specific context helps our safety specialists expedite resolutions without requiring back-and-forth communication.
+        </p>
+</section>
+<!-- Section 5: Safety Guarantee & Block Checkbox -->
+<section class="flex flex-col gap-space-md pt-space-xs">
+<!-- Privacy Notice Callout -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md font-bold text-on-surface">Your privacy is strictly protected</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              The account or creator you report will <span class="font-semibold text-on-surface">never be told</span> who filed this report. All submissions are queued anonymously and assessed by trained human moderators according to ROVE Community Guidelines within 24 hours.
+            </p>
+</div>
+</div>
+<!-- Block Account Immediate Action -->
+<label class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input class="mt-0.5 w-4 h-4 text-primary focus:ring-primary accent-primary rounded" id="block_account_check" type="checkbox"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface">
+              Also block @marcus_lens immediately
+            </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              They will no longer be able to view your visual journal, follow your updates, or send you private direct messages.
+            </span>
+</div>
+</label>
+</section>
+<!-- Section 6: Action Footer -->
+<div class="flex items-center justify-between pt-space-md">
+<a class="px-space-lg py-2.5 rounded-xl text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors" href="#">
+          Cancel
+        </a>
+<div class="flex items-center gap-space-md">
+<span class="hidden sm:inline font-body-sm text-body-sm text-on-surface-variant">
+            Next: Review & Confirmation
+          </span>
+<button class="flex items-center gap-space-xs px-space-lg py-2.5 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold hover:bg-primary shadow-sm transition-all" id="submit_report_btn" type="button">
+<span>Continue to Review</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Supplementary Informational Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-space-lg">
+<!-- Card A: Crisis & Support -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm text-tertiary">
+<span class="material-symbols-outlined text-[20px]">health_and_safety</span>
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider">Need Immediate Support?</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            If you or someone else is experiencing an imminent threat of self-harm, physical violence, or urgent crisis, please reach out directly to emergency responders or international crisis hotlines.
+          </p>
+</div>
+<div class="pt-space-md">
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md font-semibold text-primary hover:underline" href="#">
+<span>Access Safety Center Resources</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Card B: Submission Tracking Guarantee -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider">Moderation Guarantee</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Every submission generates a secure tracking ticket accessible under your Settings > Support Requests tab. You will receive an editorial disposition update once the ticket has concluded.
+          </p>
+</div>
+<div class="pt-space-md">
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md font-semibold text-primary hover:underline" href="#">
+<span>Read ROVE Community Standards</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initReportForm() {
+    const textarea = document.getElementById('report_details');
+    const counter = document.getElementById('char_counter');
+    const continueBtn = document.getElementById('submit_report_btn');
+
+    if (textarea && counter) {
+      textarea.addEventListener('input', function() {
+        const len = textarea.value.length;
+        counter.textContent = `${len} / 500 characters`;
+      });
+    }
+
+    if (continueBtn) {
+      continueBtn.addEventListener('click', function() {
+        // Visual feedback micro-interaction
+        continueBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[18px] animate-spin">refresh</span>
+          <span>Preparing Review...</span>
+        `;
+        setTimeout(() => {
+          continueBtn.innerHTML = `
+            <span>Continue to Review</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          `;
+        }, 800);
+      });
+    }
+  })();
+</script></main></div></body></html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Manrope:wght@200..800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&amp;family=Inter:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface":"#24162a","surface-container-low":"#feefff","surface-container-lowest":"#ffffff","inverse-on-surface":"#fdebff","primary-fixed":"#f0dbff","surface-container-highest":"#f2dbf7","background":"#fff7fc","on-secondary":"#ffffff","on-primary":"#ffffff","on-surface-variant":"#4c4451","on-primary-container":"#deb8ff","on-tertiary-container":"#ffb2bf","outline":"#7d7483","tertiary-container":"#9e1e45","secondary-container":"#f3c5fe","surface-variant":"#f2dbf7","surface-dim":"#e9d3ee","on-secondary-fixed":"#2d0c3a","secondary":"#765181","error":"#ba1a1a","surface-container-high":"#f8e1fd","inverse-surface":"#3a2b40","on-primary-fixed":"#2c0050","error-container":"#ffdad6","tertiary-fixed-dim":"#ffb2be","tertiary":"#7c0030","on-secondary-fixed-variant":"#5c3968","on-tertiary-fixed":"#3f0015","on-background":"#24162a","secondary-fixed":"#f9d8ff","outline-variant":"#cec3d3","primary":"#56178c","on-tertiary":"#ffffff","secondary-fixed-dim":"#e4b7ef","on-tertiary-fixed-variant":"#8d0d3a","on-primary-fixed-variant":"#622698","on-error":"#ffffff","primary-fixed-dim":"#deb7ff","surface-tint":"#7b42b1","inverse-primary":"#deb7ff","tertiary-fixed":"#ffd9de","on-error-container":"#93000a","surface":"#fff7fc","primary-container":"#6f35a5","surface-container":"#fce7ff","on-secondary-container":"#734e7e","surface-bright":"#fff7fc"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{gutter:"1.5rem","gutter-lg":"2rem",margin:"2rem","space-xs":"0.25rem","space-xl":"2.5rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","space-sm":"0.5rem"},fontFamily:{"body-lg":["Inter"],"body-md":["Inter"],"headline-sm":["Manrope"],"display-lg":["Manrope"],"label-md":["DM Sans"],"headline-lg":["Manrope"],"body-sm":["Inter"],"label-sm":["DM Sans"],"headline-xl":["Manrope"],"label-lg":["DM Sans"]},fontSize:{"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.03em",fontWeight:"700"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"500"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-lg":["15px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(46,32,52,0.04)]"><div class="flex flex-col"><div class="pt-space-lg px-gutter pb-space-md"><div class="flex items-center gap-space-sm"><img alt="ROVE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VgYSErIft0Qw1xqT6mHuDLwG3MDvs4EMJTpbGc2voZyhuRKusjenJhpHwTyKtPuu3S3C1IzgtB6uvFI-RFhM6oppf17JqpmvL5BTfoFQaclpjL9SA-Ixq4sfhrp-RicHaAuybqxCS-4E_2EKe_Efd0eKY9HoAGo3hkTsVAoInuaF6c2n8LCutx9ZMeiJP_WFvi_bzp0_QAyDCSSikKRKZjC5d1RoUROv19sfixiFLyqZPwbxv0HB5RI00"/><span class="font-headline-lg text-headline-lg font-bold tracking-tight text-primary">ROVE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-tight">Your people. Your perspective.</p></div><div class="px-space-md my-space-xs"><a class="flex items-center justify-between w-full py-space-sm px-space-md rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_4px_20px_-2px_rgba(46,32,52,0.12)] hover:bg-primary transition-colors" data-path="create-post" href="#"><span class="font-label-lg text-label-lg">Create Post</span></a></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-xs" data-active-classes="bg-surface-container text-primary font-bold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="home" href="#"><span class="font-label-lg text-label-lg">Home</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="explore" href="#"><span class="font-label-lg text-label-lg">Explore</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reels" href="#"><span class="font-label-lg text-label-lg">Reels</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="messages" href="#"><span class="font-label-lg text-label-lg">Messages</span><span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm font-bold">3</span></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm rounded-xl transition-colors bg-surface-container text-primary font-bold" data-path="notifications" href="#"><span class="font-label-lg text-label-lg">Notifications</span><span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">5</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="saved" href="#"><span class="font-label-lg text-label-lg">Saved</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="font-label-lg text-label-lg">Profile</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="font-label-lg text-label-lg">Settings</span></a></nav></div><div class="p-space-md m-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MVMBAgXoBuVyD0mHxI3OfH3OriKy92oIjJ_8Broab7K8Ygx7MRHAqTAUWTGdiLpySBSJwwC9t2kO7XAG5dnXibwya0QtqvNCPzY1TLm1gjpax7h9idNYE8O7RK-NdIvvMGnyJTElAed3qQtruvqwYN8KczySWfHY2suo1CVk03SZPseKbOhgGC8brXAEZQLx2n5dDGPHiN_bAZ--2qUi217y10hFvkFoGeLV1kaXun9pHuOkS-CGEg"/><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Elena Vance</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">@elena_rove</span></div></div><button aria-label="Switch account or logout" class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors shrink-0" type="button"><span class="material-symbols-outlined text-[20px]">swap_horiz</span></button></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 z-40 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(46,32,52,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-2 bg-surface-container-lowest rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary-container shadow-[0_1px_4px_rgba(46,32,52,0.03)]" placeholder="Search people, posts, hashtags..." type="search"/></div></div><div class="flex items-center gap-space-md"><a aria-label="New Post" class="p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="create-post" href="#"><span class="material-symbols-outlined text-[22px]">edit_square</span></a><a aria-label="Notifications" class="relative p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary"></span></a><a aria-label="Direct Messages" class="p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="messages" href="#"><span class="material-symbols-outlined text-[22px]">chat_bubble</span></a><div class="h-6 w-[1px] bg-outline-variant/30 mx-space-xs"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MVMBAgXoBuVyD0mHxI3OfH3OriKy92oIjJ_8Broab7K8Ygx7MRHAqTAUWTGdiLpySBSJwwC9t2kO7XAG5dnXibwya0QtqvNCPzY1TLm1gjpax7h9idNYE8O7RK-NdIvvMGnyJTElAed3qQtruvqwYN8KczySWfHY2suo1CVk03SZPseKbOhgGC8brXAEZQLx2n5dDGPHiN_bAZ--2qUi217y10hFvkFoGeLV1kaXun9pHuOkS-CGEg"/></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1280px] mx-auto px-gutter py-space-lg">
+<!-- Breadcrumb & Top Utility -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Notifications</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Notifications</h1>
+<span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold shadow-sm" id="unread-counter">5</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Stay up to date with your community, visual perspectives, and curated interactions.</p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto pt-2 md:pt-0">
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-all font-label-md text-label-md shadow-sm active:scale-95" id="mark-all-read-btn">
+<span class="material-symbols-outlined text-[18px] text-primary">done_all</span>
+<span>Mark all as read</span>
+</button>
+<button aria-label="Notification Settings" class="p-2 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all shadow-sm active:scale-95">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</button>
+</div>
+</div>
+<!-- Segmented Filter Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-sm mb-space-lg no-scrollbar">
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-secondary-container text-primary font-bold shadow-sm transition-all whitespace-nowrap" data-filter="all">
+        All
+      </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all whitespace-nowrap flex items-center gap-1.5 shadow-sm" data-filter="unread">
+<span>Unread</span>
+<span class="px-1.5 py-0.2 bg-primary/10 text-primary rounded-full text-xs font-bold">5</span>
+</button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all whitespace-nowrap shadow-sm" data-filter="follows">
+        Follows
+      </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all whitespace-nowrap shadow-sm" data-filter="likes">
+        Likes
+      </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all whitespace-nowrap shadow-sm" data-filter="comments">
+        Comments
+      </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all whitespace-nowrap shadow-sm" data-filter="mentions">
+        Mentions
+      </button>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Notifications Feed Column (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- SECTION: TODAY -->
+<div class="flex flex-col gap-space-xs section-group" data-group="today">
+<div class="flex items-center justify-between px-space-xs py-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Today</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">5 unread interactions</span>
+</div>
+<!-- Notification 1 (Like / Dolomites) -->
+<article class="notification-item unread flex items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container transition-colors shadow-sm relative group" data-type="likes">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Sophisticated outdoor portrait of Sophia Chen in natural dawn lighting, high editorial finish, muted plum highlights, cinematic photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgYXIzo3QAD7JBwruZsbnq-sokTmjHU3QLN1bj3X53Jn1LfuklUuliB_N4VW1y3aDpeKbRda1PJr340k6ySxenFLpWcOBWPLZxuEMWXgazzHG5jjzFxsMXCqjPdpiOiPd19vozv5IWq1nmmdRzFYvELIcD_7a8wdacRvYgvLTTlxxR28s-5PnD6BeaKOOA7rA6R6uxlQSX-ohcBTIkIl0aGK6yAG8NYiw7YTFNtz1etPUVR0MtiDy-rQ"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+<span class="font-label-lg text-label-lg font-bold text-on-surface hover:text-primary cursor-pointer">Sophia Chen</span>
+<span class="text-on-surface-variant"> (@sophia.studio)</span>
+                  liked your photo in <span class="font-semibold text-primary cursor-pointer hover:underline">Dolomites Sunrise Trek</span>
+</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="w-2 h-2 rounded-full bg-primary unread-dot"></span>
+<span class="font-body-sm text-body-sm text-primary font-semibold">2m ago</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-space-sm">
+<div class="w-14 h-14 rounded-xl overflow-hidden shadow-xs shrink-0 cursor-pointer group-hover:scale-105 transition-transform">
+<img class="w-full h-full object-cover" data-alt="Panoramic breathtaking alpine view of Dolomites mountain jagged peaks bathed in golden morning sunrise light, physical medium film grain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP6ZRqiWoExf3FKcPHZKO-UghqsVof2-FEblx10VZlN8uMBYWkaqLdMxutHs2lRCbTmZ25fMKCls4ZA_7kO3cd2IsvmpTuVOkyBJKn2RB1ezcF59EqIAU5rpulcEo_9FRsk383FoWGpEmd9GHdyfGD0K1ZFFTCyx4ra_lNTW_uS_nhKyg2nYBrOFyKveyS25mnQ0Dvxyfh86WojoGgQKLdOuVsMuqrBUIdk_PMlvlGS3_r_q8OzSCeYg"/>
+</div>
+</div>
+</article>
+<!-- Notification 2 (Comment / Mountain Post) -->
+<article class="notification-item unread flex items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container transition-colors shadow-sm relative group" data-type="comments">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Editorial candid portrait of photographer Marcus Lindqvist with camera strap and wool coat, subtle deep plum aesthetic, natural ambient Scandinavian light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATttCEYNlf-cmYTcj2-xNlVfWQSG1BuKBqKUogmipBgpSZshB0lI6gao3NBhjusWZsIp_EDpfpFJfVmTOtGYLtOBAs9SlhXwb8QwmSLVixQ8GT2fIbBT5seA9B7hjrGw2NU6GxzOAo-466S21PEeYmh-ivVrYvEW-lcsowIR-4zNkevdJHMJ-Bi_QQ9Yump8fwxPZfv-CSRCwZnjzsnhEetUYw7zIhakMSzYqgAs-DzyhjLSJshAti0A"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+<span class="font-label-lg text-label-lg font-bold text-on-surface hover:text-primary cursor-pointer">Marcus Lindqvist</span>
+<span class="text-on-surface-variant"> commented:</span>
+<span class="italic text-on-surface-variant block mt-0.5 line-clamp-1">"This is such a beautiful shot! The tonal grading in the shadows is perfection."</span>
+</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="w-2 h-2 rounded-full bg-primary unread-dot"></span>
+<span class="font-body-sm text-body-sm text-primary font-semibold">15m ago</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-space-sm">
+<div class="w-14 h-14 rounded-xl overflow-hidden shadow-xs shrink-0 cursor-pointer group-hover:scale-105 transition-transform">
+<img class="w-full h-full object-cover" data-alt="Minimalist landscape photography of mist-covered ridges in deep purple and indigo early morning light with subtle physical paper texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIX7YttrgBDPeVWJ5sQz5uzivywBUc-mOZcRczd6dHjC3a33rZuLaxEFkV2v6sW46EhXZLa9qZ7lFR-qHW3jIsuag2iWC_hgHCm9W_Bfquo3NZQ4B7Qp3xuhVax8ZwkIwhHU1aKCKsqTSJipPlHW4Gd6dvNTpAqn_ZoezDymG-i7M7AAkEu1EI3Yk-Ri4--ZUO3q8yWudb176i8RKr77A4w-8lMPuM-Uomo5R0i3IdJa2NcIdudUveDg"/>
+</div>
+</div>
+</article>
+<!-- Notification 3 (Follow Kai Tanaka) -->
+<article class="notification-item unread flex items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container transition-colors shadow-sm relative group" data-type="follows">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Urban Tokyo portrait of Kai Tanaka wearing minimalist eyeglasses in moody dusk natural street illumination with soft plum undertones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKYd7uQ7TG0beGx4p_d6fa4GY9HR1_z7EaD-2Dk2uyNg1-GbrrD-WlhzUp2YwEXqoN0xyTDgYuNYKSZWu2UlsH9yIlb5QcejM4grnJ5pKMS6t8J9v8JUMUPPsnVXxqXknkTuUTQ38nigdjok4NAfxhT-_uuMMRukQ8tdT1f9ImYXeT2WDA70bLAQweJ0aP2uCfwNGugjYUxIMTH64jt54hZwAFPgvWN_tdCEQ-zqp-uXJKlaLT6wQLOQ"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[12px]">person_add</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+<span class="font-label-lg text-label-lg font-bold text-on-surface hover:text-primary cursor-pointer">Kai Tanaka</span>
+<span class="text-on-surface-variant"> (@kai_film) started following you.</span>
+</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="w-2 h-2 rounded-full bg-primary unread-dot"></span>
+<span class="font-body-sm text-body-sm text-primary font-semibold">45m ago</span>
+</div>
+</div>
+</div>
+<div class="shrink-0">
+<button class="follow-toggle-btn px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-all shadow-sm active:scale-95" data-user="kai">
+                + Follow Back
+              </button>
+</div>
+</article>
+<!-- Notification 4 (Multi-avatar stack / Atelier) -->
+<article class="notification-item unread flex items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container transition-colors shadow-sm relative group" data-type="likes">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0 flex items-center -space-x-4 pt-1">
+<img class="w-9 h-9 rounded-full object-cover ring-2 ring-surface-container-low shadow-xs" data-alt="Close up portrait of Astrid Lindholm with warm Scandinavian natural daylight, serene expression, clean aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfmgKM7P7aOVSYpDFP_CgKEReSGilyjpdGaUbCUirf7rmgbgZKXUd3NEHQdLNVkwUbwJjFooJ7HKjQX7kpQIBl7ZzC1SeFAUGu-oeOncwRQFTk6CLGFWCYZYLWbeXB2KfQobHSrg6nI_5o1dv8jz3VyEAjpIG2otSn0e07-SS0PZ6LOJlFQ-MkiGDroB-pgWQpqIIj2kiz_p8WIFvQZoRJE4_ZheHX3HSRZ5Nr9M4Ga9HTI7vw268kXg"/>
+<img class="w-9 h-9 rounded-full object-cover ring-2 ring-surface-container-low shadow-xs" data-alt="Studio portrait of Matteo Rossi wearing structured charcoal sweater, moody lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChpBczWxxeTKELq6I_j3AcbWDvBqFklDgBBXjBVPtTM6GXo8NgUK9qmEufIq5qx6yZ0o_e8_0Aij0ux1Ailu2zxnfCiCmaeonWif7wN8I37KgQThzWgkjhv65aMqgNYU99JKOLBOZa3xvb_W4H6yJhlpwefL5fdxWpH1GW1_wiQngShUtIR9c8sXYHuQUMKcUqicXQBCIA-rYMfL0kUW_JNquFAkS9pUgNQCqONAHodr-KTmXOgpSCVw"/>
+<div class="w-9 h-9 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm font-bold flex items-center justify-center ring-2 ring-surface-container-low shadow-xs">
+                  +3
+                </div>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Astrid Lindholm</span>,
+                  <span class="font-label-lg text-label-lg font-bold text-on-surface">Matteo Rossi</span> and
+                  <span class="font-semibold text-on-surface">3 others</span>
+                  liked your perspective <span class="font-semibold text-primary cursor-pointer hover:underline">'Quiet focus hours at Atelier'</span>
+</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="w-2 h-2 rounded-full bg-primary unread-dot"></span>
+<span class="font-body-sm text-body-sm text-primary font-semibold">2h ago</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-space-sm">
+<div class="w-14 h-14 rounded-xl overflow-hidden shadow-xs shrink-0 cursor-pointer group-hover:scale-105 transition-transform">
+<img class="w-full h-full object-cover" data-alt="Warm editorial still life of handcrafted ceramic coffee cup beside fountain pen and open cloth notebook on sunlit oak table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMahLDpFUf2EAUi4pYD29-oUdP_VuEcpX02306OHUP6umoO6MME-3_0_sGVIEdciWOIWu235N1N86OxDZCWajNIO8is0pBNzWQQC8CcsQa9SD0GdQwGSsgRKBwZAKAQOZ0HlNsNaBLhHFTBJ07pVC8ZfZUrhgKn7SL6DLMcPs8aY9QuyseqyOMhYYF1BDjIbnJ-K874GbHjm8su0q7FH70nIeB389cyilkvSQTMbjXVVPGA1Hevrfd9Q"/>
+</div>
+</div>
+</article>
+<!-- Notification 5 (Mention / Brutalist study) -->
+<article class="notification-item unread flex items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container transition-colors shadow-sm relative group" data-type="mentions">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Architect Amara O'Connor looking thoughtful in front of geometric structural grid, high resolution editorial portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi2EpjfPPkp2wd1o6sp47REexwqU6dpK2RzCdY_jOTjlfZ2mYCzuXECz0gm6MKoqhJG7V3Mo5ixfRabilmbKWMY56T84eblAV-zlLu8Avh_pGCcqlglb5kSlcV7cdsuwuKq3XgKMXOg0eR8rMGzE96e-BWsJnP5o6acwyvcINuEJL7wxfp1hwwvUayu8rWkdpl4fa3eXtYQerh8AfW0Sd3V21jb9laVkIXsFidLh-2QuA7UN034s-uVA"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary-container text-primary font-bold flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[13px]">alternate_email</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+<span class="font-label-lg text-label-lg font-bold text-on-surface hover:text-primary cursor-pointer">Amara O'Connor</span>
+<span class="text-on-surface-variant"> mentioned you in a comment:</span>
+<span class="text-on-surface block mt-0.5 line-clamp-1 bg-surface-container-lowest/80 px-2.5 py-1 rounded-lg text-body-sm mt-1">
+<span class="text-primary font-semibold">@elena_rove</span> take a look at this brutalist light study!
+                  </span>
+</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="w-2 h-2 rounded-full bg-primary unread-dot"></span>
+<span class="font-body-sm text-body-sm text-primary font-semibold">3h ago</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-space-sm">
+<div class="w-14 h-14 rounded-xl overflow-hidden shadow-xs shrink-0 cursor-pointer group-hover:scale-105 transition-transform">
+<img class="w-full h-full object-cover" data-alt="Brutalist concrete architecture with sharp rhythmic angled shadows and dramatic diagonal sunlight beam casting deep plum contrasts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwqN3YOy9SF7DPcbb62-5-Q1LKnYqnuMlXqgaw7dd0Xe2KQHP1DmSUmjFLfmkCnSS6rXGf2IBdifF9prR3P6CDdzGQYzDKKIFH2_RHkArMR6q3eEa8htfUnbL-q_Hg97w0ueZj84q9T2R8PbUZKHPgqrlgEWOvLvb8VRI-dY0c5gn-ehgGFcSH7oE7PAGdtlbU60elU47_GJ3mpQG-PoOVZG-FfmRgH-aG3DukGV1vj7jTG_2O7QJUng"/>
+</div>
+</div>
+</article>
+</div>
+<!-- SECTION: YESTERDAY -->
+<div class="flex flex-col gap-space-xs section-group pt-space-md" data-group="yesterday">
+<div class="flex items-center justify-between px-space-xs py-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Yesterday</span>
+</div>
+<!-- Notification 6 (Julian Lin Followed) -->
+<article class="notification-item flex items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors shadow-sm relative group" data-type="follows">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Candid street portrait of Julian Lin in warm twilight city illumination, clean stylish composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRDHCkuoIzAR5ZaMhDEmD94HMLjAhRZdyQMB3TyHdf2K36NOQnKFNNJ8cLXK-9gEWpcziyp-eRmbyvZ2Cg8zi8GCAxh6A94bWFTGD7M1yHoSQUwqEV6WDfqwcfjFeehh_VwN1tJ8Stt-RTaEq88R-fDWoFUIRwHE68MLZDr6oKZ0u06n0k1yZt007m6-Xrd7i0eV5nM2iYtJh3_1FiRLQwK8BiuALfs8eUqKCJrsE0NBcsyP6WsXOIOw"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[12px]">person</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+<span class="font-label-lg text-label-lg font-bold text-on-surface hover:text-primary cursor-pointer">Julian Lin</span>
+<span class="text-on-surface-variant"> (@julian_lin) started following you.</span>
+</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">1d ago</span>
+</div>
+</div>
+</div>
+<div class="shrink-0">
+<button class="px-4 py-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md font-semibold transition-all shadow-xs active:scale-95">
+                Following
+              </button>
+</div>
+</article>
+<!-- Notification 7 (Kenji Sato Liked Comment) -->
+<article class="notification-item flex items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors shadow-sm relative group" data-type="likes">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Serene profile of Kenji Sato against a cedar wood tea house panel, gentle Japanese editorial atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiL2F-xWl9sNy7I2hyQu7Dt70EQ3Jw9rN4PdwJWauyqBPhB6asRgrKCaitHrpDTqL6XbCpgMhSPzROkjdf0qybyOT9OO-VcR7tn-DwTCdZLyA5mqbOrl4uS6bzyq13H2cVwY6Iql-Ef0E1QSNfs1oHoKR5p454MJZn3eFvcjPHkNRhgJ4f_FZZeBjX9dpATRcN7AfoQdmt2RLtNiPFEiv14PuV3kxrEb59tGUm0xdsMeO9AopddtmKjQ"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+<span class="font-label-lg text-label-lg font-bold text-on-surface hover:text-primary cursor-pointer">Kenji Sato</span>
+<span class="text-on-surface-variant"> liked your comment:</span>
+<span class="italic text-on-surface-variant block mt-0.5 line-clamp-1">"The sound of rain over bamboo gutters at Tenryū-ji."</span>
+</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">1d ago</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-space-sm">
+<div class="w-14 h-14 rounded-xl overflow-hidden shadow-xs shrink-0 cursor-pointer group-hover:scale-105 transition-transform">
+<img class="w-full h-full object-cover" data-alt="Moody wet cobblestones and moss-covered garden stone lantern at a historic Kyoto Zen temple under gentle summer rain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASozcc0Pj-C56F4HS4RZA66Dp90VGqsK3uikL5tN5xMEwQQge6Ff6tx3vtR4WTwYVc1LCdSX7W8r9Zh6FXm8a5tnv4a-71HVXb-sHMfa6W4umf9g5Xbu7pUkxrSW-UdW468ecX4kaPVTSSHlRk1gvvWCoXDaXkK-2EibuRpOxo-lnVnq7u5V_HhvXm4h37qcyBDs_B3jIFwBr-xfmB3sEAAPFrXiGDfkzFiF6CuIiX-LUvITdAAjV_kw"/>
+</div>
+</div>
+</article>
+<!-- Notification 8 (Freja saved post) -->
+<article class="notification-item flex items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors shadow-sm relative group" data-type="all">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Artistic portrait of Freja Lindstrom in Stockholm design studio surrounded by blueprints and timber models" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXFYoMKzQgNpHWDDJlSCvVA3Vr8JiKi0tOJyDf_gd1bkhCmj-YvUfeU8E84bWkOitIpaZVDtC8f1EObOv__QDPycQaTp8dcV17jA1iisROdsZzcemdYuNFO1JVHJcyN0S2U8RgnF6uhqJeL7o3M0T1MEZ3EmSGcVT82QeZRO6cF_oeo_feLBah9uVk2wlucYMj7Z1rZNOrRj0v6YP8N7Ltno-ZvDZp876zOO6WGZKvE6AektyMvfIseQ"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+<span class="font-label-lg text-label-lg font-bold text-on-surface hover:text-primary cursor-pointer">Freja Lindstrom</span>
+<span class="text-on-surface-variant"> saved your post to </span>
+<span class="font-semibold text-primary">Architecture &amp; Spaces</span>.
+                </p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">1d ago</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-space-sm">
+<div class="w-14 h-14 rounded-xl overflow-hidden shadow-xs shrink-0 cursor-pointer group-hover:scale-105 transition-transform">
+<img class="w-full h-full object-cover" data-alt="Graceful geometric spiral staircase in an art gallery viewed from directly above in clean monochrome tones with subtle plum cast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6Ii5SXK2mpl8vVAV8HLCZ_WO9AJL3UO9-RA1qf7Xr94Bs6Kcsga4OiM1POr4bNNR-2I04eQsGbPjh7K_YgDbkjcTYq0BkSSyvTKWfDeuPy0vECKf-FV9w07UyQrOWKxvDYLPSitzz7AwqYoxLB4SNyXwARGku1roJyODcGONRBP-Ctb4nSYDi6d6PmJb_fay2P3LuIDy75fR2GBfDwd2PEMipsWmKRiwrG--uloR1ZAiN2gPUILq7QQ"/>
+</div>
+</div>
+</article>
+</div>
+<!-- SECTION: EARLIER THIS WEEK -->
+<div class="flex flex-col gap-space-xs section-group pt-space-md" data-group="earlier">
+<div class="flex items-center justify-between px-space-xs py-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Earlier This Week</span>
+</div>
+<!-- Notification 9 (Clara Moreau Followed) -->
+<article class="notification-item flex items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors shadow-sm relative group" data-type="follows">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Editorial Parisian portrait of Clara Moreau seated outdoors at a classic marble café bistro table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh3cKl40xfFFNjuu9-Jo9c0doLOQPN1N3M07256o8TVjrCxXJZ_eLV14XyN3g-eJ7XP7MvqmIW6k6PLmzL5RcCp5pjr02bPMry8JfyZo9MEg-R59CqUAPTUrpy_Y2bwCXZZxgNh40xsOYPPFj6jVkEp_Y5lgdP2WSg9Yd0m_k9wDqcIFa7WBRKleXCVwiD3qjWJSVqWZzYpZ1YnrbFcAsNSkC24xKC8nBrsjv7t38eNlFGomx5K_Xr7A"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[12px]">person</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+<span class="font-label-lg text-label-lg font-bold text-on-surface hover:text-primary cursor-pointer">Clara Moreau</span>
+<span class="text-on-surface-variant"> (@moreau_clara) started following you.</span>
+</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">4d ago</span>
+</div>
+</div>
+</div>
+<div class="shrink-0">
+<button class="px-4 py-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md font-semibold transition-all shadow-xs active:scale-95">
+                Following
+              </button>
+</div>
+</article>
+<!-- Notification 10 (Curator Spotlight) -->
+<article class="notification-item flex items-center justify-between gap-space-md p-space-md rounded-2xl bg-gradient-to-r from-surface-container-high to-surface-container-lowest hover:to-surface-container-low transition-all shadow-sm relative group" data-type="all">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-11 h-11 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-primary text-on-primary font-label-sm text-label-sm font-bold tracking-wide">ROVE EDITORIAL</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">5d ago</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-snug mt-1">
+                  Your perspective <span class="font-semibold text-primary cursor-pointer hover:underline">'Lago di Braies before the crowds'</span> was handpicked and featured in this week's <span class="font-bold text-on-surface">Curator Spotlight</span>!
+                </p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary shadow-xs">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+<!-- Right Context Panel (4 Cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Card 1: Weekly Engagement Overview -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Analytics</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Weekly Engagement</h2>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">insights</span>
+</div>
+<!-- Total Reach Metric -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Total Reach</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">48.2k</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-xs">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+14.2%</span>
+</div>
+</div>
+<!-- Sub Stats Grid -->
+<div class="grid grid-cols-3 gap-space-xs text-center pt-1">
+<div class="p-2.5 rounded-xl bg-surface-container-low/60 flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">1.4k</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Likes</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low/60 flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">148</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Comments</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low/60 flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">+42</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Followers</span>
+</div>
+</div>
+<!-- Mini Inline SVG Sparkline -->
+<div class="w-full pt-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant mb-1">
+<span>Velocity (Last 7 Days)</span>
+<span class="text-primary font-semibold">Peak: Thu</span>
+</div>
+<svg class="w-full h-12 text-primary" fill="none" viewbox="0 0 280 48">
+<path d="M0 38 C 40 38, 50 18, 90 24 C 130 30, 150 8, 190 14 C 230 20, 250 4, 280 2" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0 38 C 40 38, 50 18, 90 24 C 130 30, 150 8, 190 14 C 230 20, 250 4, 280 2 L 280 48 L 0 48 Z" fill="currentColor" fill-opacity="0.08"></path>
+</svg>
+</div>
+</div>
+<!-- Card 2: Notification Preferences Shortcut -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Preferences</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Quick Controls</h2>
+</div>
+<a class="font-label-sm text-label-sm text-primary hover:underline font-bold" href="#">Manage</a>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Toggle item 1 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">notifications_active</span>
+<span class="font-label-md text-label-md text-on-surface">Push Notifications</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm font-bold">On</span>
+</div>
+<!-- Toggle item 2 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">mail</span>
+<span class="font-label-md text-label-md text-on-surface">Email Digest</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-semibold">Weekly</span>
+</div>
+<!-- Toggle item 3 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">tag</span>
+<span class="font-label-md text-label-md text-on-surface">Mention Alerts</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-semibold">Everyone</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Suggested Connections -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Discovery</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Suggested Curators</h2>
+</div>
+<a class="font-label-sm text-label-sm text-primary hover:underline font-bold" href="#">See all</a>
+</div>
+<!-- Suggested account -->
+<div class="flex items-center justify-between gap-space-sm p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-10 h-10 rounded-full object-cover shrink-0 shadow-xs" data-alt="Portrait of artisan ceramist Yuka Hashimoto working in Kyoto studio with delicate clay pieces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJruYjTrUpH9C2HtIiGJnLm0LC3FMUIw8CTsSXmVeCDSEbw4xLUOEBI4mclrY0QQhHn_2gvCLkYXa970CUWWdYULER1MY1K1UOLAeGawCciyvK4vLRKoFB4s_sJa72MvqFAMOMZ1QElBwG0_V6tjNuUKduNjDeBM3LkdDYu52RXcO5tTXevdq10AyIyCttBJnNyeH9RvwHQlsfLwliWrTDnRK0i0dtwE_rDIJvV2cZtsM0pt7PqJQqAQ"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Yuka Hashimoto</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">@yuka_craft</span>
+</div>
+</div>
+<button class="follow-toggle-btn px-3.5 py-1.5 rounded-xl bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary transition-all shrink-0 active:scale-95" data-user="yuka">
+              + Follow
+            </button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant px-1 leading-relaxed">
+            Follow curators whose visual sensibility complements your collections to discover richer feeds.
+          </p>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<script>
+  // Filter Functionality
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const notificationItems = document.querySelectorAll('.notification-item');
+  const sectionGroups = document.querySelectorAll('.section-group');
+
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => {
+        t.classList.remove('bg-secondary-container', 'text-primary', 'font-bold');
+        t.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+      tab.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+      tab.classList.add('bg-secondary-container', 'text-primary', 'font-bold');
+
+      const filter = tab.getAttribute('data-filter');
+
+      notificationItems.forEach(item => {
+        const type = item.getAttribute('data-type');
+        const isUnread = item.classList.contains('unread');
+
+        if (filter === 'all') {
+          item.style.display = 'flex';
+        } else if (filter === 'unread') {
+          item.style.display = isUnread ? 'flex' : 'none';
+        } else if (type === filter) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      // Hide section headers if all items inside are hidden
+      sectionGroups.forEach(group => {
+        const visibleItems = group.querySelectorAll('.notification-item:not([style*="display: none"])');
+        group.style.display = visibleItems.length === 0 ? 'none' : 'flex';
+      });
+    });
+  });
+
+  // Mark all as read action
+  const markReadBtn = document.getElementById('mark-all-read-btn');
+  const counter = document.getElementById('unread-counter');
+
+  markReadBtn.addEventListener('click', () => {
+    const unreadItems = document.querySelectorAll('.notification-item.unread');
+    unreadItems.forEach(item => {
+      item.classList.remove('unread', 'bg-surface-container-low');
+      item.classList.add('bg-surface-container-lowest');
+      const dot = item.querySelector('.unread-dot');
+      if (dot) dot.remove();
+    });
+
+    if (counter) {
+      counter.textContent = '0';
+      counter.classList.remove('bg-primary-container', 'text-on-primary');
+      counter.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+    }
+  });
+
+  // Follow Button Toggles
+  const followButtons = document.querySelectorAll('.follow-toggle-btn');
+  followButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const isFollowing = btn.getAttribute('data-following') === 'true';
+      if (isFollowing) {
+        btn.setAttribute('data-following', 'false');
+        btn.textContent = '+ Follow';
+        btn.className = 'follow-toggle-btn px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-all shadow-sm active:scale-95';
+      } else {
+        btn.setAttribute('data-following', 'true');
+        btn.textContent = 'Following';
+        btn.className = 'follow-toggle-btn px-4 py-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md font-semibold transition-all shadow-xs active:scale-95';
+      }
+    });
+  });
+</script></main></div></body></html>

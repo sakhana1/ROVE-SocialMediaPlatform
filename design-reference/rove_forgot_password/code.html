@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1440, initial-scale=1.0">
+  <title>ROVE - Forgot Password</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              plum: '#4A2856',
+              purple: '#6F35A5',
+              lavender: '#F3EAFE',
+              'lavender-soft': '#FBF7FF',
+              bg: '#FAF9FC',
+              text: '#2E2034',
+              secondary: '#8C8193',
+              border: '#E8E1ED'
+            }
+          },
+          fontFamily: {
+            manrope: ['Manrope', 'sans-serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#FAF9FC] text-[#2E2034] font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-[#F3EAFE] selection:text-[#6F35A5]">
+
+  <!-- Top Minimal Header with Wordmark -->
+  <header class="w-full max-w-[1440px] mx-auto px-12 py-8 flex items-center justify-between">
+    <a href="/login" class="flex items-center gap-3 group">
+      <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#4A2856] to-[#6F35A5] flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+        <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+        </svg>
+      </div>
+      <div>
+        <span class="font-manrope font-extrabold text-2xl tracking-tight text-[#4A2856]">ROVE</span>
+        <span class="block text-[11px] font-medium tracking-wider text-[#8C8193] uppercase -mt-1">Perspective Archive</span>
+      </div>
+    </a>
+    
+    <div class="flex items-center gap-2 text-sm text-[#8C8193]">
+      <span>Remember your credentials?</span>
+      <a href="/login" class="font-semibold text-[#6F35A5] hover:text-[#4A2856] hover:underline px-3.5 py-1.5 rounded-lg hover:bg-[#F3EAFE] transition-all">Log In</a>
+    </div>
+  </header>
+
+  <!-- Main Recovery Container (Centered Card on Soft Canvas) -->
+  <main class="w-full max-w-[540px] mx-auto px-6 py-8 flex-1 flex items-center justify-center">
+    <div class="w-full bg-white rounded-3xl border border-[#E8E1ED] shadow-[0_12px_40px_rgba(74,40,86,0.06)] p-10 sm:p-12 text-center relative overflow-hidden">
+      
+      <!-- Subtle top lavender ambient glow -->
+      <div class="absolute -top-16 left-1/2 -translate-x-1/2 w-64 h-32 bg-[#F3EAFE] rounded-full blur-2xl pointer-events-none opacity-70"></div>
+
+      <!-- Icon Badge -->
+      <div class="relative z-10 mx-auto w-16 h-16 rounded-2xl bg-[#F3EAFE] border border-[#6F35A5]/20 flex items-center justify-center text-[#6F35A5] mb-6 shadow-sm">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+        </svg>
+      </div>
+
+      <!-- Headings -->
+      <div class="relative z-10 mb-8">
+        <h1 class="font-manrope text-3xl font-bold tracking-tight text-[#2E2034] mb-2.5">
+          Forgot your password?
+        </h1>
+        <p class="text-sm text-[#8C8193] leading-relaxed max-w-sm mx-auto">
+          Enter the email address associated with your ROVE creator account and we’ll send you a secure recovery link.
+        </p>
+      </div>
+
+      <!-- Form -->
+      <form class="relative z-10 space-y-5 text-left" onsubmit="event.preventDefault();">
+        <div>
+          <label for="recovery-email" class="block text-xs font-semibold uppercase tracking-wider text-[#2E2034] mb-1.5">Registered Email Address</label>
+          <div class="relative">
+            <input 
+              type="email" 
+              id="recovery-email" 
+              name="email" 
+              value="elena_vance@studio.design"
+              placeholder="name@example.com" 
+              class="w-full h-11 px-3.5 pl-10 rounded-xl border border-[#E8E1ED] bg-[#FAF9FC] focus:bg-white text-sm text-[#2E2034] placeholder-[#8C8193]/70 focus:outline-none focus:border-[#6F35A5] focus:ring-2 focus:ring-[#6F35A5]/20 transition-all font-medium"
+              required
+            />
+            <span class="absolute left-3.5 top-3 text-[#8C8193]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button 
+          type="submit" 
+          class="w-full h-11 rounded-xl bg-[#6F35A5] hover:bg-[#4A2856] active:scale-[0.99] text-white text-sm font-semibold tracking-wide shadow-md shadow-[#6F35A5]/25 flex items-center justify-center gap-2 transition-all focus:outline-none focus:ring-2 focus:ring-[#6F35A5] focus:ring-offset-2"
+        >
+          <span>Send Recovery Link</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </button>
+
+        <!-- Secondary Return Action -->
+        <div class="text-center pt-2">
+          <a href="/login" class="inline-flex items-center gap-2 text-sm font-semibold text-[#6F35A5] hover:text-[#4A2856] hover:underline transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+            <span>Back to Login</span>
+          </a>
+        </div>
+      </form>
+
+      <!-- Recovery Guidance Box -->
+      <div class="relative z-10 mt-8 p-4 rounded-2xl bg-[#FAF9FC] border border-[#E8E1ED] text-left flex items-start gap-3">
+        <div class="w-5 h-5 rounded-full bg-[#F3EAFE] text-[#6F35A5] flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">i</div>
+        <div class="text-xs text-[#8C8193] leading-relaxed">
+          <p class="font-medium text-[#2E2034] mb-0.5">Privacy Notice</p>
+          For security, if an account exists for this address, a reset token will arrive within 5 minutes. If no account matches, we do not reveal account existence.
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Authentication Footer -->
+  <footer class="w-full max-w-[1440px] mx-auto px-12 py-6 flex items-center justify-between text-xs text-[#8C8193]">
+    <div class="flex items-center gap-6">
+      <a href="#" class="hover:text-[#2E2034] transition-colors">Help & Safety</a>
+      <a href="#" class="hover:text-[#2E2034] transition-colors">Security Overview</a>
+      <a href="#" class="hover:text-[#2E2034] transition-colors">Community Guidelines</a>
+      <a href="#" class="hover:text-[#2E2034] transition-colors">Privacy Policy</a>
+    </div>
+    <div class="text-xs text-[#8C8193]">
+      © 2025 ROVE Network. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

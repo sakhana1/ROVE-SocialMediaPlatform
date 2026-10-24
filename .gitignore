@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+.env
+backend/media/
+
+# Node
+node_modules/
+dist/
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&family=Inter:wght@100..900&family=Manrope:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#f9d8ff","inverse-surface":"#3a2b40","surface-container-low":"#feefff","on-primary":"#ffffff","on-surface-variant":"#4c4451","surface-container-high":"#f8e1fd","on-secondary-container":"#734e7e","on-secondary-fixed-variant":"#5c3968","on-primary-container":"#deb8ff","on-error-container":"#93000a","on-background":"#24162a","on-secondary":"#ffffff","surface-container-highest":"#f2dbf7","tertiary-fixed":"#ffd9de","on-primary-fixed":"#2c0050","primary-fixed-dim":"#deb7ff","error":"#ba1a1a","secondary-fixed-dim":"#e4b7ef","inverse-on-surface":"#fdebff","on-tertiary":"#ffffff","on-surface":"#24162a","on-primary-fixed-variant":"#622698","surface-tint":"#7b42b1","surface-variant":"#f2dbf7","on-tertiary-fixed-variant":"#8d0d3a","surface":"#fff7fc","outline":"#7d7483","tertiary-fixed-dim":"#ffb2be","outline-variant":"#cec3d3","on-secondary-fixed":"#2d0c3a","secondary":"#765181","surface-container-lowest":"#ffffff","surface-container":"#fce7ff","primary":"#56178c","on-tertiary-container":"#ffb2bf","tertiary-container":"#9e1e45","primary-fixed":"#f0dbff","surface-dim":"#e9d3ee","on-error":"#ffffff","tertiary":"#7c0030","primary-container":"#6f35a5","surface-bright":"#fff7fc","secondary-container":"#f3c5fe","background":"#fff7fc","on-tertiary-fixed":"#3f0015","inverse-primary":"#deb7ff","error-container":"#ffdad6"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-lg":"2rem",gutter:"1.5rem","space-lg":"1.5rem","space-xl":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem",margin:"2rem","space-md":"1rem"},fontFamily:{"body-lg":["Inter"],"display-lg":["Manrope"],"body-md":["Inter"],"headline-lg":["Manrope"],"headline-xl":["Manrope"],"label-lg":["DM Sans"],"label-sm":["DM Sans"],"label-md":["DM Sans"],"headline-sm":["Manrope"],"body-sm":["Inter"]},fontSize:{"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}],"display-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-lg":["15px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"500"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(46,32,52,0.04)]"><div class="flex flex-col"><div class="pt-space-lg px-gutter pb-space-md"><div class="flex items-center gap-space-sm"><img alt="ROVE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VgYSErIft0Qw1xqT6mHuDLwG3MDvs4EMJTpbGc2voZyhuRKusjenJhpHwTyKtPuu3S3C1IzgtB6uvFI-RFhM6oppf17JqpmvL5BTfoFQaclpjL9SA-Ixq4sfhrp-RicHaAuybqxCS-4E_2EKe_Efd0eKY9HoAGo3hkTsVAoInuaF6c2n8LCutx9ZMeiJP_WFvi_bzp0_QAyDCSSikKRKZjC5d1RoUROv19sfixiFLyqZPwbxv0HB5RI00"/><span class="font-headline-lg text-headline-lg font-bold tracking-tight text-primary">ROVE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-tight">Your people. Your perspective.</p></div><div class="px-space-md my-space-xs"><a class="flex items-center justify-center gap-space-sm w-full py-space-sm px-space-md rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_4px_20px_-2px_rgba(46,32,52,0.12)] hover:bg-primary transition-colors" data-path="create-post" href="#"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>Create Post</span></a></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-xs" data-active-classes="bg-surface-container text-primary font-bold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="home" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-lg text-label-lg">Home</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm rounded-xl transition-colors bg-surface-container text-primary font-bold" data-path="explore" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">explore</span><span class="font-label-lg text-label-lg">Explore</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reels" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">movie</span><span class="font-label-lg text-label-lg">Reels</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="messages" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-lg text-label-lg">Messages</span></div><span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm font-bold">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Notifications</span></div><span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">5</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="saved" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">bookmark</span><span class="font-label-lg text-label-lg">Saved</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="profile" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-lg text-label-lg">Profile</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></div></a></nav></div><div class="p-space-md m-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MVMBAgXoBuVyD0mHxI3OfH3OriKy92oIjJ_8Broab7K8Ygx7MRHAqTAUWTGdiLpySBSJwwC9t2kO7XAG5dnXibwya0QtqvNCPzY1TLm1gjpax7h9idNYE8O7RK-NdIvvMGnyJTElAed3qQtruvqwYN8KczySWfHY2suo1CVk03SZPseKbOhgGC8brXAEZQLx2n5dDGPHiN_bAZ--2qUi217y10hFvkFoGeLV1kaXun9pHuOkS-CGEg"/><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Elena Vance</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">@elena_rove</span></div></div><button aria-label="Switch account or logout" class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors shrink-0" type="button"><span class="material-symbols-outlined text-[20px]">swap_horiz</span></button></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 z-40 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(46,32,52,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-2 bg-surface-container-lowest rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary-container shadow-[0_1px_4px_rgba(46,32,52,0.03)]" placeholder="Search people, posts, hashtags..." type="search"/></div></div><div class="flex items-center gap-space-md"><a aria-label="New Post" class="p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="create-post" href="#"><span class="material-symbols-outlined text-[22px]">edit_square</span></a><a aria-label="Notifications" class="relative p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary"></span></a><a aria-label="Direct Messages" class="p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="messages" href="#"><span class="material-symbols-outlined text-[22px]">chat_bubble</span></a><div class="h-6 w-[1px] bg-outline-variant/30 mx-space-xs"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MVMBAgXoBuVyD0mHxI3OfH3OriKy92oIjJ_8Broab7K8Ygx7MRHAqTAUWTGdiLpySBSJwwC9t2kO7XAG5dnXibwya0QtqvNCPzY1TLm1gjpax7h9idNYE8O7RK-NdIvvMGnyJTElAed3qQtruvqwYN8KczySWfHY2suo1CVk03SZPseKbOhgGC8brXAEZQLx2n5dDGPHiN_bAZ--2qUi217y10hFvkFoGeLV1kaXun9pHuOkS-CGEg"/></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Discovery Subheader & Exploration Meta -->
+<section class="px-gutter pt-space-lg pb-space-sm flex flex-col gap-space-md">
+<div class="flex flex-wrap items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-widest font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+<span>Curated Stream • Vol. 14</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-extrabold tracking-tight mt-0.5">
+          Visual Index
+        </h1>
+</div>
+<!-- Quick Search Bar & Trend Pill Shortcuts -->
+<div class="flex items-center gap-space-sm flex-wrap max-w-xl w-full sm:w-auto">
+<div class="relative flex-1 sm:w-72">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full pl-9 pr-space-md py-2 bg-surface-container-lowest rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline shadow-sm focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="exploreSearchInput" placeholder="Search creators, aesthetics, palettes..." type="text"/>
+</div>
+<div class="hidden lg:flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-outline">Trending:</span>
+<button class="px-2 py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-primary font-medium transition-colors" type="button">#BrutalistLight</button>
+<button class="px-2 py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-primary font-medium transition-colors" type="button">#KyotoTeas</button>
+</div>
+</div>
+</div>
+<!-- Category Filter Chips -->
+<div class="relative w-full overflow-hidden">
+<div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none scroll-smooth" id="categoryChipsRail">
+<button class="filter-pill shrink-0 px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span>For You</span>
+</button>
+<button class="filter-pill shrink-0 px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-md text-label-md font-medium shadow-sm transition-all" type="button">
+          Architecture
+        </button>
+<button class="filter-pill shrink-0 px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-md text-label-md font-medium shadow-sm transition-all" type="button">
+          Fine Art Photography
+        </button>
+<button class="filter-pill shrink-0 px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-md text-label-md font-medium shadow-sm transition-all" type="button">
+          Editorial
+        </button>
+<button class="filter-pill shrink-0 px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-md text-label-md font-medium shadow-sm transition-all" type="button">
+          Culinary
+        </button>
+<button class="filter-pill shrink-0 px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-md text-label-md font-medium shadow-sm transition-all" type="button">
+          Journeys
+        </button>
+<button class="filter-pill shrink-0 px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-md text-label-md font-medium shadow-sm transition-all" type="button">
+          Design Systems
+        </button>
+<button class="filter-pill shrink-0 px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-md text-label-md font-medium shadow-sm transition-all" type="button">
+          Motion & 3D
+        </button>
+</div>
+</div>
+</section>
+<!-- Curated Editorial Media Grid -->
+<section class="px-gutter pt-space-sm pb-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter auto-rows-[230px]">
+<!-- Card 1: 2x2 Hero Featured Showcase (Brutalist Architecture) -->
+<div class="group relative col-span-1 md:col-span-2 lg:col-span-2 row-span-2 rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Monolithic modernist concrete pavilion in golden hour sun with sweeping dramatic shadows, serene plum-tinged lavender sky, high architectural minimalism, pristine clean geometry, physical gallery print mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpwWwJ8gygBvf1NzmneMgaP53blbeymLk1xuMKcq-ybaRy0I8wUjObkAppC6Jtef5ftiP6a72hMp2BvkqGfz6QV1lOjhgx74D94x6RWenUD5Kr4Yngq5lTloDviAxwp1Nk7oRmldBOggZguPZmcEV4xAJNMcdnU0NI5Izm2ma_imLRGKkRilCQf7oABlyMKnisGNGyXAGXv8XcrU_qMrlxNBtPx_8JY8ybVAbZ36DaNnyNf4nt4qh3Dg"/>
+<!-- Editorial Tag & Curator Badge -->
+<div class="absolute top-4 left-4 z-10 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest/85 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold tracking-wider uppercase shadow-sm">
+            Curator's Pick
+          </span>
+<span class="px-2.5 py-1 rounded-md bg-inverse-surface/80 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span>
+<span>Feature Editorial</span>
+</span>
+</div>
+<!-- Hover Scrim Overlay with Metrics & Creator Attribution -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-space-lg flex flex-col justify-end text-inverse-on-surface">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-bold text-primary font-label-sm">
+                MK
+              </div>
+<div class="truncate">
+<p class="font-headline-sm text-headline-sm leading-tight text-on-primary font-semibold truncate">Canyon Concrete Pavilion</p>
+<p class="font-body-sm text-body-sm text-on-primary-container truncate">by Mateo Korhonen • Helsinki</p>
+</div>
+</div>
+<!-- Social Counters -->
+<div class="flex items-center gap-space-md shrink-0">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-primary">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>8.4k</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-primary">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+<span>412</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: 1:1 Standard Tile (Minimalist Interior) -->
+<div class="group relative col-span-1 row-span-1 rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Minimalist sunlit living space with curved wabi-sabi travertine table, plum linen cushions, textured lime-wash beige wall, sculptural ceramic vase with dried lunaria branches, soft soft ambient morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ3VtP3P9zVRpQJblC_Vjxnef35wHGtWZIf81ySROAe6-7NK_NvTrrHkrjD1japHpAPbpQ2JeS5rjgeT-ICNuQ55a0QUzarXXWePr7v210Dj1uDVNM7V_stWJZ017BAoLsmxoW-jJ35xz2auD9L4y32Uii0nmlPg-BMR7OozNqD_juCsMr-miqc-gPvtpGjoSE6y2mBlZeqq5Xp97eo1PzlBNfENWgq3PL4dHK8qWeppZ7aj_sBrjJhA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-space-md flex flex-col justify-end text-inverse-on-surface">
+<p class="font-label-md text-label-md font-bold text-on-primary truncate">Sanctuary of Silence</p>
+<div class="flex items-center justify-between mt-1 text-on-primary-container">
+<span class="font-body-sm text-body-sm">@alina_arch</span>
+<div class="flex items-center gap-space-sm text-on-primary font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">favorite</span> 3.4k</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">chat_bubble</span> 182</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: 4:5 Portrait Card (Japanese Tea Ceremony) -->
+<div class="group relative col-span-1 md:col-span-1 row-span-2 rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Japanese traditional tea master whisking ceremonial matcha in a dark raku ceramic bowl, misty bamboo garden window backdrop, soft ambient plum diffused lighting, authentic documentary still." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAYugO8eBmHGhA0KhZcQTr3Zw9GqpXEWucoSIoQ2DZxE5cl5J7YpJpN4N8hPsXqDrxobHDhd8F9XNcLHdzAYR4iWuO48yqxkqAZnj7eNm7JRrshJq_piWHYVXhFTpFHRtaD2cCtsL9LWTUKZONb3yVuyjxdbVrCytbFD76TZtXQTZE0mssnxkv_rw3B1GqXJC2Do5twXPBKQgHNHI6h_TGnRxVB-3wBaWzMBT_i23lWnh3LiDwUEXuzQ"/>
+<div class="absolute top-3 right-3 z-10">
+<span class="p-1.5 rounded-lg bg-surface-container-lowest/85 backdrop-blur-md text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+</span>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-space-md flex flex-col justify-end text-inverse-on-surface">
+<p class="font-headline-sm text-headline-sm font-semibold text-on-primary truncate">Raku & Steam</p>
+<p class="font-body-sm text-body-sm text-on-primary-container mb-2">Uji, Kyoto • Series of 6</p>
+<div class="flex items-center justify-between border-t border-outline-variant/20 pt-2 font-label-md text-label-md text-on-primary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">favorite</span> 5.1k</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">chat_bubble</span> 249</span>
+</div>
+</div>
+</div>
+<!-- Card 4: 1:1 Standard Tile (High Altitude Mountain Pass) -->
+<div class="group relative col-span-1 row-span-1 rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Dramatic winding mountain highway over Swiss alpine pass, dramatic purple twilight mist rolling through limestone peaks, cinematic Kodachrome film color grading, sharp high-altitude atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB87m_n3eDesRdYmDi6BWwbQqyvWxWo5vw9ifNQHvi3TsZ9O0kXnbaQrOC6QaRswdxXt-mQdL1q4URkxKg0gAcUvueiu_42T1lYJl6juDXIMTlKLyT9xBNGVvrl-sl1HRLH3JLHDCxpInjP4l3bjEk8m1PYxuP2MhcW-jVD2NDKoo6KwpXeb4_BRcOQiZ1lchDh2X0BRxoQLBM83q2vgv1KZawd-0I9gjbidFTGnUdEKniuAnyMkrfpRg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-space-md flex flex-col justify-end text-inverse-on-surface">
+<p class="font-label-md text-label-md font-bold text-on-primary truncate">Furka Pass at Dusks</p>
+<div class="flex items-center justify-between mt-1 text-on-primary-container">
+<span class="font-body-sm text-body-sm">@johan_lens</span>
+<div class="flex items-center gap-space-sm text-on-primary font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">favorite</span> 2.8k</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">chat_bubble</span> 94</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 5: 4:5 Portrait Card (Modern Fashion Editorial) -->
+<div class="group relative col-span-1 md:col-span-1 row-span-2 rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Editorial avant-garde fashion portrait of an elegant model draped in sculptural deep plum organza fabrics, high cheekbones, ethereal directional chiaroscuro studio lighting, haute couture magazine style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKCxxea7RbPzSTCd1P4JmvXpPsZUdlTxiEUauuA476Fq43vvbu1lwr6DHXehzqzOmaSlteb-B17t4XJg67jbu0JTj9ueoH9N4Qhzh-Xjql9-i7SpyczXqNKnKVA9X1AOXG4pX8X3NA_v6evrbqqZ0mFcqZ5kzWLiHblSXJ-MOnlfa_JaaxQA55BxLio6i9AwqC8n4_oydqIgHJXd-_2VQ3zPOhbZX9TagKvPITCt3XTigDP3CzIpwwDw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-space-md flex flex-col justify-end text-inverse-on-surface">
+<p class="font-headline-sm text-headline-sm font-semibold text-on-primary truncate">Drape & Contour</p>
+<p class="font-body-sm text-body-sm text-on-primary-container mb-2">Studio 09 • Milan</p>
+<div class="flex items-center justify-between border-t border-outline-variant/20 pt-2 font-label-md text-label-md text-on-primary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">favorite</span> 4.9k</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">chat_bubble</span> 310</span>
+</div>
+</div>
+</div>
+<!-- Card 6: 1:1 Standard Tile (Analog Film Still) -->
+<div class="group relative col-span-1 row-span-1 rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="35mm grain photograph of vintage espresso cup on weathered marble Parisian bistro table, morning newspaper, dappled sun through chestnut trees, nostalgic subtle warm lilac hues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAeZlUhwhSopnuvBaUojDjhdr2Ipjhl3q_wSMjj5VOUlMnH1HnpULX7BO28zmdLQeGfi6LRVLEMjzt35jOPkWxXfQ8YqiLDdEm-fyynWm16-SmDBfYAYBk_prlxONmtt048LD5OmxeHUDHkAzMOCRgkjr1bOH3pC7GiTyJom3jKD0ob7JQW-z8vc4O_n7Nziuze7nqd_8S3JfGcTK3IOuQ8TT-j9qpSsp0V3e3F8b3s8U710WDUvOvag"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-space-md flex flex-col justify-end text-inverse-on-surface">
+<p class="font-label-md text-label-md font-bold text-on-primary truncate">Café de Flore 07:15</p>
+<div class="flex items-center justify-between mt-1 text-on-primary-container">
+<span class="font-body-sm text-body-sm">@claire_analog</span>
+<div class="flex items-center gap-space-sm text-on-primary font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">favorite</span> 1.9k</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">chat_bubble</span> 87</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 7: 1:1 Standard Tile (Ceramic Gastronomy & Culinary) -->
+<div class="group relative col-span-1 row-span-1 rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Artisanal Michelin-level culinary plating with dark fermented blackberries, edible violets, smoked cream quenelle on hand-thrown stoneware pottery, organic dark culinary fine art aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-cQ-4dU_WXgAeaocDGyrpNJvmdleyEuMHf0ZfclZWGGulyINe17CSHXZBE8UVi1Q6FhuIzIEiwRwJZOAZ6LKEOVndivJzRH6MMieQMqwuKoIMF3klrKrEbxCjdRFkmvXmHmW25eL7BTo31srtlmqdv-Y18SlGR-kSVFZj33VmOmbFTpJOIVb_icnHHu-kD17AqFAceQhmqXW23Kql9WKM6WQ8BBUb2vMzOwkxp8tlI9vM2LI9oqLsPA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-space-md flex flex-col justify-end text-inverse-on-surface">
+<p class="font-label-md text-label-md font-bold text-on-primary truncate">Nocturne Gastronomy</p>
+<div class="flex items-center justify-between mt-1 text-on-primary-container">
+<span class="font-body-sm text-body-sm">@chef_koren</span>
+<div class="flex items-center gap-space-sm text-on-primary font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">favorite</span> 3.1k</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">chat_bubble</span> 135</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 8: 1:1 Standard Tile (Nordic Minimal Architecture) -->
+<div class="group relative col-span-1 row-span-1 rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Spiral staircase in sculptural white Nordic museum casting geometric violet shadow ribbons onto raw timber floors, soft ethereal natural skylight from above, architectural precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7IW_ZQRsp3QmEsBA0tm9OF-hVaVGd3Ua75Az5rSPe9drl9eM3QVgvFXSPAanT3wrYlMoPwYVnCCcS2au3PevvRuyfFf_er5WFZmiPgZmX47A_Ke7hzH--jFusn7doogXK-Ab_fIcMtdSmGOU8jEQwJaUNzkE1YtN8ACtstKrsfZcbO79zNgNdCP_Q5YL75OxW7s5IxL8OWx-t0StDtlZ5OHl5RbNQVcUVK8qOTjr1hwxpSjRvTXbOKw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-space-md flex flex-col justify-end text-inverse-on-surface">
+<p class="font-label-md text-label-md font-bold text-on-primary truncate">Helical Helix</p>
+<div class="flex items-center justify-between mt-1 text-on-primary-container">
+<span class="font-body-sm text-body-sm">@soren_nord</span>
+<div class="flex items-center gap-space-sm text-on-primary font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">favorite</span> 6.2k</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">chat_bubble</span> 420</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 9: 1:1 Standard Tile (Generative 3D Spatial Study) -->
+<div class="group relative col-span-1 row-span-1 rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Iridescent glass generative ribbon sculpture floating in an architectural vacuum, refracted purple and amethyst light caustics, clean futuristic hyper-minimal 3D render." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACZQfl6kKcjxqJoLok-9bWTiAtQMERmmadbdedJm5XukCRUgDWMey9gU03adQABclCflILtqrvVUCGYDMy68320rT_mSj_lAMUA9x5u_oHIHANu3YybZYRfp7ua7gNAysS01tb0y1h4nTO0r3SdkqicTCXe4u4DSOYUOqUXtirMncf2HNk43_IlalyzW-ENoUbIQYB5lelz3E44lqB8hW1SXJbDC8l8kQPFnfEGdcEMqqLs_UQg_HXQg"/>
+<div class="absolute top-3 right-3 z-10">
+<span class="p-1.5 rounded-lg bg-surface-container-lowest/85 backdrop-blur-md text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">view_in_ar</span>
+</span>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-space-md flex flex-col justify-end text-inverse-on-surface">
+<p class="font-label-md text-label-md font-bold text-on-primary truncate">Prism Flow // 08</p>
+<div class="flex items-center justify-between mt-1 text-on-primary-container">
+<span class="font-body-sm text-body-sm">@vector_form</span>
+<div class="flex items-center gap-space-sm text-on-primary font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">favorite</span> 2.1k</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">chat_bubble</span> 108</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- "Creators Spotlight" Carousel Section -->
+<section class="px-gutter pb-space-xl">
+<div class="p-space-lg md:p-space-xl rounded-2xl bg-surface-container-low relative overflow-hidden shadow-sm">
+<!-- Ambient Decorative Radial Mesh -->
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-primary-fixed/50 blur-3xl pointer-events-none"></div>
+<!-- Spotlight Header with Carousel Controls -->
+<div class="relative z-10 flex flex-col sm:flex-row sm:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Voices of ROVE</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mt-0.5">
+            Creators Spotlight
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-1">
+            Visual storytellers reshaping digital curation through thoughtful composition and distinct aesthetic points of view.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Previous creators" class="w-10 h-10 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-high flex items-center justify-center shadow-sm transition-colors active:scale-95" id="spotlightPrevBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<button aria-label="Next creators" class="w-10 h-10 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-high flex items-center justify-center shadow-sm transition-colors active:scale-95" id="spotlightNextBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Creator Spotlight Grid Carousel Cards -->
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="creatorCarousel">
+<!-- Creator 1: Mateo Korhonen -->
+<div class="creator-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+<div>
+<!-- Creator Profile Header -->
+<div class="flex items-center justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative shrink-0">
+<div class="w-11 h-11 rounded-full p-0.5 bg-gradient-to-tr from-primary to-secondary-container">
+<img class="w-full h-full rounded-full object-cover" data-alt="Editorial portrait headshot of Mateo Korhonen, clean Scandinavian lighting, soft plum jacket, sharp focused thoughtful gaze, high-res portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa-GRO2s-AamPgi7FrDanBBH5DeOOKN8o5ub7ynl4efq0EovVTMUmh1Z2gIf_NKuwRkaGWf7mFSjjAg2lDIV0O82aCUmFLjsm7h9TscluFA6Gxev9FZV2hf9kAE0p7dma622IZ_zdJM6l2S7DaekwOWHDCkcFmVFD3bqH2lk6SASvi-OHaA7DcmDHVO4_8Ms1dpj5gHbwBJsE-uOGvIKZa6ja2_NafymwaP6UBJqIg4i44Wc7OABxqBA"/>
+</div>
+</div>
+<div class="truncate">
+<div class="flex items-center gap-1">
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Mateo Korhonen</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">@korhonen_arch • 42.8k followers</p>
+</div>
+</div>
+<button class="shrink-0 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary transition-all active:scale-95 shadow-sm" onclick="toggleFollow(this)" type="button">
+                Follow
+              </button>
+</div>
+<!-- Bio -->
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+              Exploring brutalist volumes and Nordic silence through large-format monochromatic analog prints.
+            </p>
+<!-- 3-Photo Mini Mosaic Grid -->
+<div class="grid grid-cols-3 gap-1.5 rounded-lg overflow-hidden">
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Architectural detail of concrete skylight beam throwing graphic diagonal shadow, soft lilac tone, minimalist texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcbb-YFhPMbM1wsRU03_BPRoCaiGS3Td2zDagiImHO_uSzYi79wpc53ZC-nlx7sApRH0C772tVYk8_9tBwcUqoDhIE3gRkv5MkWQgWks80le3mDnDnyY7sLpvVZJcMCsTKN1amilX6T6HX0S9n0CSxO6bCigWgzNG7Z9EXIJDjzlK9xGwJ_ucR7LD-QBHtq9v0KFeVv3dOUzEEp2Z7pRmodun3gXazeMChsX7ol-XTYje7r0DEv3rxOg"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Curved staircase with cast concrete balustrade in pale Nordic light, quiet atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1_KQbxqKk5fNQ1owjnRtJxgExhgB3WWKs9IYlSjL1TmBn3lwIw1ONKxJEunqZIDpT4XOa-Ho9kdYrQYBll6vq120Bd6y5EjKJGiQCefZrRR8IanJj9X_KYxWNdHNwt2DJVHSlHG4HI6nZx6_MG1S4hegGgU26zJc1M2qcmsqKM9a1nlm25R5RSxVOf8q2o2fThPoATvmvc33c0gY1i9i_gAFH-vXiLGTRsmLIxuFYh2zFkleEhDY6wA"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Abstract shadow pattern of modernist brise-soleil facade on muted plum background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdS6LtB0AGc5g--98LYd7sbp7Cg4t3iiQhNHok1O2H11MwtC5fK5vmqZ6YRhlpHlCpjHL8SYlhP30ONCTKvlfKm2N6UdcI_DrOVMmusV9QxR59vZ8ScFr2E-JIU8g1O_CKDVnifYYdicN1-OB1vQegBcVs1ss80VmO5Fu-GPYRPpWWDhkfjjOnF87qtx8J9AP39zsuAwA2kIX4Qh0k4_IAkf7wdC8Uu_KbTFFXrEd5JfRkIVXZc7E4uw"/>
+</div>
+</div>
+</div>
+<!-- Bottom Micro Meta -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-sm mt-space-sm border-t border-surface-container-high/60">
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[14px]">location_on</span> Helsinki, Finland</span>
+<span class="font-medium">184 Series</span>
+</div>
+</div>
+<!-- Creator 2: Yuka Hashimoto -->
+<div class="creator-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+<div>
+<!-- Creator Profile Header -->
+<div class="flex items-center justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative shrink-0">
+<div class="w-11 h-11 rounded-full p-0.5 bg-gradient-to-tr from-primary to-secondary-container">
+<img class="w-full h-full rounded-full object-cover" data-alt="Close-up creative portrait of Japanese visual artist Yuka Hashimoto in minimalist black turtleneck against plum studio backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFBLrkdcGGfUdTtHZJM0bwDaeLTTubkML65IWcGLCw2sfwQ7SJtFhMIt4WHuovZAJUl5QQ3lJPAQ7FHRp7i4TX1cHEcg49-yKMI4tVHWlm2XFG0AB59z0RD3Rvfd6ZufLy9Ss0Rr3C1hRKj9IVjJpN7L1j2-hVbN3hBWE9Oh_obM4FJtKQRjgNiivDi95M3_XGRjdFcpQ75tj0yM-GFmLShQd-GSeRbiiaIS0rkqasLqqiF1E3Cd7jEw"/>
+</div>
+</div>
+<div class="truncate">
+<div class="flex items-center gap-1">
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Yuka Hashimoto</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">@yuka_craft • 89.2k followers</p>
+</div>
+</div>
+<button class="shrink-0 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary transition-all active:scale-95 shadow-sm" onclick="toggleFollow(this)" type="button">
+                Follow
+              </button>
+</div>
+<!-- Bio -->
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+              Ceramicist & tea practitioner. Preserving 400-year-old chado philosophies through modern lens studies.
+            </p>
+<!-- 3-Photo Mini Mosaic Grid -->
+<div class="grid grid-cols-3 gap-1.5 rounded-lg overflow-hidden">
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Textured crackle-glaze ceramic tea bowl sitting on charred cedar timber, zen mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZXNobiHA-4x0snCRBOeU8q3H1nMnCqp3ATfjWoChBhV8sUQdVdzsCcfcfgfEadYlIfF4zbvutwqi3sAtCp4kpw62H2NFwlSYkedLrebzaQGUrD72k-XezpKl8hWbGTytxxB2i_5AqzMjTNJJ1M1bk3ubsb7_5VnFM3dZaA01ugNDikMdH5VB3uQ-Wql5lquQxOsj9OYfcwkAywF1xSrWYVQxyNWCYbjjk0UAJ85Yxqw4mKBeYqKAuGQ"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Bamboo water ladle casting soft silhouette over moss garden in early Kyoto fog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA54LiB0Dl1qIacMNa_ihydqlMZhqVnp4-Ww7ISw51ljCIF6-5nHzhHyxI82QFthAt2xZZCD7JKaIjcQDOmGkDHERiBMJIpPiBbVBaO-jBr7WvFqbyTPDXG6Dm1HTparO70odMPXgD5TI706bHzJIXBLWMXL26N4fARAN1T-eB7YjzYp3jX20Y8B3XwIKRjwGwvN64vTkrp5xZUojjXyRRB28t0Jrq8VPnsPBCz9zhOjS4FJOF80PzOGw"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Powdered green matcha tea cloud forming in dark ceramic vessel, high contrast macro." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS6xfdEIKx54AQtoUSasAAIn8qpjJF8Zsi4zYOv0BtJPXVepJ0vyt7H4WjoWj5m7ft1c8btC54PUPgnpA-hmW39Uh9RZim7zfKKF3DOsUhdyPiXXXsD9dGjbDoGbDD6lj0ZxhVn36ygAno4wxUSiTrINqk4CbesDX2zkFAmI3tzMIKHe2F8mJg6DsBs4hEzWK4zIDGoFz4f93o8lCXbmymr6U0D40OiGltqhEyUQiSFYIhE_xmOBp-_g"/>
+</div>
+</div>
+</div>
+<!-- Bottom Micro Meta -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-sm mt-space-sm border-t border-surface-container-high/60">
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[14px]">location_on</span> Kyoto, Japan</span>
+<span class="font-medium">312 Stories</span>
+</div>
+</div>
+<!-- Creator 3: Soren Kjaer -->
+<div class="creator-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+<div>
+<!-- Creator Profile Header -->
+<div class="flex items-center justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative shrink-0">
+<div class="w-11 h-11 rounded-full p-0.5 bg-gradient-to-tr from-primary to-secondary-container">
+<img class="w-full h-full rounded-full object-cover" data-alt="Portrait of Soren Kjaer, Scandinavian architectural photographer, holding medium format rangefinder, outdoor natural ambient light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaVCH-PxWgsbcsOzY1KEp1wi3QoPtlVSnW0ETXllzhCHH8eNPliosrg0dWuEkH3teTub4ygu1FKscH-0F2p5AbbG1YiQqhIWlV6tVn2yqPGgPbtZhtOH7gHfQYIzruC192muHPsJzS3VrXwNQcjpJkwxCXmMvCKdHVwx7U3TmcAPnLQ1tdlNpZxaXzUzXr5aYq_68T9d-6ob7f5WrExHoAFDkubuSevb7uawgJf2l7CZiSfr_qio1FNw"/>
+</div>
+</div>
+<div class="truncate">
+<div class="flex items-center gap-1">
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Soren Kjaer</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">@soren_kjaer • 63.4k followers</p>
+</div>
+</div>
+<button class="shrink-0 px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-all active:scale-95 shadow-sm" onclick="toggleFollow(this)" type="button">
+                Following
+              </button>
+</div>
+<!-- Bio -->
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+              Documenting forgotten coastal architecture and the intersection between tectonic rock and brutalist concrete.
+            </p>
+<!-- 3-Photo Mini Mosaic Grid -->
+<div class="grid grid-cols-3 gap-1.5 rounded-lg overflow-hidden">
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Solitary lighthouse perched on black basalt cliffs of Iceland under deep violet twilight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj1EwycELi4oM5BwL1Zb0cPZKpBUMbwUR1HwnsKH7-8v_PB1azKc-99ndqFwy9ehQGrBPIMxEo5cDXZ2PbEPkxlsCwXWv_At3nWE0hy6IYBIyCgBaNWWU383u72QREOOOk7a4R5oWizQc9ypkaFX9nMvCJ_Dr5MW9balO2GMujqoJ-gOtmRVjilzfC2yuLEBKtGoBMtKG2sfDtHoW9WAJRoNegCRlDlXxI4ooC17UDZHbUx8e5yCy5Ww"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Raw timber salt cabin submerged in tidal arctic spray, Lofoten islands mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3r6jWo3Rr3q9T2iuOVDTrRpdnB2Q88-GIjd-JeMfjm6BRSJ_engi7dgOd4KbaY64VFuZc4mLt6PotKDSbKPgOwxdiKtB8CtCfMnviUO7XbG9FL0d0PKRyDFI8a1unhLFZeFFUzKZo4J5DuOSuBEfBcTciA49MspaWNhlcJKzH2FXuDI0t7HIsVI7UvhBn3JYjLUjZZGaX0yE3kFfyqranGeh-rYtxE8JtPBzubLkxbwOtFmaB3tNFSQ"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Abstract geometric glass facade reflecting frozen fjord ripples, cool purple cast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASn_1dWswQ6YBGbRivU0eZGdgp-9ObNK9qvfinBvRDRpfSGXZsEsud1COOCnJDA_AxfsThCiCpdXWQsn3OU6zAn8LMpqBjfzn18kj7XnLXaCs3Zwymvme5wxttrSMJ47L5-gpcxGHAU-jS0pCbk5w2XrUsQyEfkG85RNdmgIa84HQln064_J7AlMDxXF2COVwd70Q7FgSOxKJLNSwWx9pe0qTIgNw20CAPZHvx-bKIG8Y09c6yEujZ7g"/>
+</div>
+</div>
+</div>
+<!-- Bottom Micro Meta -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-sm mt-space-sm border-t border-surface-container-high/60">
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[14px]">location_on</span> Copenhagen, Denmark</span>
+<span class="font-medium">98 Journals</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Client Behavior for Filter Chips, Search, and Spotlight Carousel -->
+<script>
+    // Category pill activation toggle
+    const pills = document.querySelectorAll('.filter-pill');
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        pills.forEach(p => {
+          p.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+          p.classList.add('bg-surface-container-lowest', 'text-on-surface-variant', 'font-medium');
+        });
+        pill.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant', 'font-medium');
+        pill.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+      });
+    });
+
+    // Follow / Unfollow Button Toggle
+    function toggleFollow(btn) {
+      if (btn.innerText.trim() === 'Follow') {
+        btn.innerText = 'Following';
+        btn.classList.remove('bg-primary-container', 'text-on-primary', 'hover:bg-primary');
+        btn.classList.add('bg-surface-container', 'text-primary', 'hover:bg-surface-container-high');
+      } else {
+        btn.innerText = 'Follow';
+        btn.classList.remove('bg-surface-container', 'text-primary', 'hover:bg-surface-container-high');
+        btn.classList.add('bg-primary-container', 'text-on-primary', 'hover:bg-primary');
+      }
+    }
+
+    // Carousel buttons micro-interaction
+    const prevBtn = document.getElementById('spotlightPrevBtn');
+    const nextBtn = document.getElementById('spotlightNextBtn');
+    const carousel = document.getElementById('creatorCarousel');
+
+    if (prevBtn && nextBtn && carousel) {
+      prevBtn.addEventListener('click', () => {
+        carousel.classList.add('opacity-70');
+        setTimeout(() => carousel.classList.remove('opacity-70'), 150);
+      });
+      nextBtn.addEventListener('click', () => {
+        carousel.classList.add('opacity-70');
+        setTimeout(() => carousel.classList.remove('opacity-70'), 150);
+      });
+    }
+  </script>
+</div></main></div></body></html>

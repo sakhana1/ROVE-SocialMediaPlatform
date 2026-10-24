@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Manrope:wght@200..800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&amp;family=Inter:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#f9d8ff","inverse-surface":"#3a2b40","surface-container-low":"#feefff","on-primary":"#ffffff","on-surface-variant":"#4c4451","surface-container-high":"#f8e1fd","on-secondary-container":"#734e7e","on-secondary-fixed-variant":"#5c3968","on-primary-container":"#deb8ff","on-error-container":"#93000a","on-background":"#24162a","on-secondary":"#ffffff","surface-container-highest":"#f2dbf7","tertiary-fixed":"#ffd9de","on-primary-fixed":"#2c0050","primary-fixed-dim":"#deb7ff","error":"#ba1a1a","secondary-fixed-dim":"#e4b7ef","inverse-on-surface":"#fdebff","on-tertiary":"#ffffff","on-surface":"#24162a","on-primary-fixed-variant":"#622698","surface-tint":"#7b42b1","surface-variant":"#f2dbf7","on-tertiary-fixed-variant":"#8d0d3a","surface":"#fff7fc","outline":"#7d7483","tertiary-fixed-dim":"#ffb2be","outline-variant":"#cec3d3","on-secondary-fixed":"#2d0c3a","secondary":"#765181","surface-container-lowest":"#ffffff","surface-container":"#fce7ff","primary":"#56178c","on-tertiary-container":"#ffb2bf","tertiary-container":"#9e1e45","primary-fixed":"#f0dbff","surface-dim":"#e9d3ee","on-error":"#ffffff","tertiary":"#7c0030","primary-container":"#6f35a5","surface-bright":"#fff7fc","secondary-container":"#f3c5fe","background":"#fff7fc","on-tertiary-fixed":"#3f0015","inverse-primary":"#deb7ff","error-container":"#ffdad6"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-lg":"2rem",gutter:"1.5rem","space-lg":"1.5rem","space-xl":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem",margin:"2rem","space-md":"1rem"},fontFamily:{"body-lg":["Inter"],"display-lg":["Manrope"],"body-md":["Inter"],"headline-lg":["Manrope"],"headline-xl":["Manrope"],"label-lg":["DM Sans"],"label-sm":["DM Sans"],"label-md":["DM Sans"],"headline-sm":["Manrope"],"body-sm":["Inter"]},fontSize:{"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}],"display-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-lg":["15px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"500"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(46,32,52,0.04)]"><div class="flex flex-col"><div class="pt-space-lg px-gutter pb-space-md"><div class="flex items-center gap-space-sm"><img alt="ROVE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VgYSErIft0Qw1xqT6mHuDLwG3MDvs4EMJTpbGc2voZyhuRKusjenJhpHwTyKtPuu3S3C1IzgtB6uvFI-RFhM6oppf17JqpmvL5BTfoFQaclpjL9SA-Ixq4sfhrp-RicHaAuybqxCS-4E_2EKe_Efd0eKY9HoAGo3hkTsVAoInuaF6c2n8LCutx9ZMeiJP_WFvi_bzp0_QAyDCSSikKRKZjC5d1RoUROv19sfixiFLyqZPwbxv0HB5RI00"/><span class="font-headline-lg text-headline-lg font-bold tracking-tight text-primary">ROVE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-tight">Your people. Your perspective.</p></div><div class="px-space-md my-space-xs"><a class="flex items-center justify-center gap-space-sm w-full py-space-sm px-space-md rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_4px_20px_-2px_rgba(46,32,52,0.12)] hover:bg-primary transition-colors" data-path="create-post" href="#"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>Create Post</span></a></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-xs" data-active-classes="bg-surface-container text-primary font-bold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="home" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-lg text-label-lg">Home</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="explore" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">explore</span><span class="font-label-lg text-label-lg">Explore</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reels" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">movie</span><span class="font-label-lg text-label-lg">Reels</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="messages" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-lg text-label-lg">Messages</span></div><span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm font-bold">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Notifications</span></div><span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">5</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="saved" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">bookmark</span><span class="font-label-lg text-label-lg">Saved</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="profile" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-lg text-label-lg">Profile</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></div></a></nav></div><div class="p-space-md m-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MVMBAgXoBuVyD0mHxI3OfH3OriKy92oIjJ_8Broab7K8Ygx7MRHAqTAUWTGdiLpySBSJwwC9t2kO7XAG5dnXibwya0QtqvNCPzY1TLm1gjpax7h9idNYE8O7RK-NdIvvMGnyJTElAed3qQtruvqwYN8KczySWfHY2suo1CVk03SZPseKbOhgGC8brXAEZQLx2n5dDGPHiN_bAZ--2qUi217y10hFvkFoGeLV1kaXun9pHuOkS-CGEg"/><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Elena Vance</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">@elena_rove</span></div></div><button aria-label="Switch account or logout" class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors shrink-0" type="button"><span class="material-symbols-outlined text-[20px]">swap_horiz</span></button></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 z-40 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(46,32,52,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-2 bg-surface-container-lowest rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary-container shadow-[0_1px_4px_rgba(46,32,52,0.03)]" placeholder="Search people, posts, hashtags..." type="search"/></div></div><div class="flex items-center gap-space-md"><a aria-label="New Post" class="p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="create-post" href="#"><span class="material-symbols-outlined text-[22px]">edit_square</span></a><a aria-label="Notifications" class="relative p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary"></span></a><a aria-label="Direct Messages" class="p-space-xs rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="messages" href="#"><span class="material-symbols-outlined text-[22px]">chat_bubble</span></a><div class="h-6 w-[1px] bg-outline-variant/30 mx-space-xs"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MVMBAgXoBuVyD0mHxI3OfH3OriKy92oIjJ_8Broab7K8Ygx7MRHAqTAUWTGdiLpySBSJwwC9t2kO7XAG5dnXibwya0QtqvNCPzY1TLm1gjpax7h9idNYE8O7RK-NdIvvMGnyJTElAed3qQtruvqwYN8KczySWfHY2suo1CVk03SZPseKbOhgGC8brXAEZQLx2n5dDGPHiN_bAZ--2qUi217y10hFvkFoGeLV1kaXun9pHuOkS-CGEg"/></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Contextual Navigation & Breadcrumb Bar -->
+<div class="w-full px-gutter-lg py-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<a class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-xl text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all group" data-path="home" href="#">
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:-translate-x-0.5">arrow_back</span>
+<span class="font-label-md text-label-md">Back to Feed</span>
+</a>
+<span class="text-outline-variant font-label-sm">/</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Perspectives</span>
+<span class="text-outline-variant font-label-sm">/</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Post #8492</span>
+</div>
+<!-- Quick Utilities -->
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="font-body-sm text-body-sm flex items-center gap-1 bg-surface-container-low px-space-sm py-0.5 rounded-full text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+        Curator Spotlight
+      </span>
+<button aria-label="Share post link" class="p-1.5 rounded-lg hover:bg-surface-container hover:text-on-surface transition-colors" title="Copy share link" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+<button aria-label="Expand view" class="p-1.5 rounded-lg hover:bg-surface-container hover:text-on-surface transition-colors" title="Full canvas mode" type="button">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+</div>
+</div>
+<!-- Main Showcase Container (Fixed Aspect Editorial Stage) -->
+<div class="w-full max-w-[1240px] mx-auto px-gutter pb-space-xl pt-space-xs">
+<div class="w-full bg-surface-container-lowest rounded-2xl shadow-[0_4px_30px_-4px_rgba(46,32,52,0.06)] overflow-hidden flex flex-col lg:flex-row h-[760px] relative">
+<!-- ================= LEFT COLUMN: Media Viewer (62%) ================= -->
+<section aria-label="Media Canvas" class="relative lg:w-[62%] w-full h-[400px] lg:h-full bg-surface-container-highest overflow-hidden select-none flex items-center justify-center group">
+<!-- Visual High-Res Photography Canvas -->
+<div class="absolute inset-0 bg-cover bg-center transition-all duration-700 ease-out" data-alt="Stunning editorial landscape photograph of Tre Cime di Lavaredo in the Italian Dolomites at golden sunrise. Jagged limestone peaks catching first morning amber light, ethereal mist floating through pine valleys below, cool plum and warm violet atmospheric tones, high aesthetic medium format photography with sharp alpine detail." id="media-viewport" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCSp9ya1DNdG1AakcxosQkgt4SDWYrlpbWS5nDI7j4TgNLlIZ_KU4g8ZRjOLrwHnBnRcEb0TU4CLq030G0S3ThOHr5OE4IKK_-2rHM9s_g7rNLN_Cfr4E0sVjxug_tBPp4kBecYD2wRVYoUxNY3QoDKCELNBhhrIqOsFoCbyDzsjaUfcTWLGSEIdHF_FwelKzZgK_GKfAOKU3syWxJ9udNMeg_A_aXta1LwKpmRhkCW_rdPJlITiElvpw')">
+<!-- Subtle Editorial Gradient Scrims for Controls -->
+<div class="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-inverse-surface/40 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-inverse-surface/60 via-inverse-surface/20 to-transparent pointer-events-none"></div>
+</div>
+<!-- Carousel Navigation: Left Button -->
+<button aria-label="Previous image" class="absolute left-space-md top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-surface-container-lowest/80 hover:bg-surface-container-lowest text-on-surface shadow-md backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:scale-105 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[22px]">chevron_left</span>
+</button>
+<!-- Carousel Navigation: Right Button -->
+<button aria-label="Next image" class="absolute right-space-md top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-surface-container-lowest/80 hover:bg-surface-container-lowest text-on-surface shadow-md backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:scale-105 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[22px]">chevron_right</span>
+</button>
+<!-- Top Left: Series Tag -->
+<div class="absolute top-space-md left-space-md flex items-center gap-1.5 px-3 py-1 rounded-full bg-inverse-surface/60 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed">photo_camera</span>
+<span>SERIES 04 : ALPINE DAWN</span>
+</div>
+<!-- Tagged Creator Badge (Overlaid bottom-left above metadata) -->
+<a class="absolute bottom-16 left-space-md z-10 flex items-center gap-1.5 px-3 py-1 rounded-full bg-inverse-surface/75 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm hover:bg-inverse-surface hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-[14px]">person</span>
+<span>with @mateo_peaks</span>
+</a>
+<!-- Camera EXIF Metadata Pill (Bottom Left) -->
+<div class="absolute bottom-space-md left-space-md z-10 flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-inverse-surface/70 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm tracking-wide shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-primary-fixed-dim">lens</span>
+<span>Leica M11</span>
+<span class="opacity-40">•</span>
+<span>Summilux 35mm f/2.0</span>
+<span class="opacity-40">•</span>
+<span>ISO 100</span>
+<span class="opacity-40">•</span>
+<span>1/500s</span>
+</div>
+<!-- Image Indicator Pill (Bottom Right) -->
+<div class="absolute bottom-space-md right-space-md z-10 flex items-center gap-1.5 px-3 py-1 rounded-full bg-inverse-surface/70 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm font-semibold tracking-wider shadow-sm">
+<span class="material-symbols-outlined text-[13px]">collections</span>
+<span>1 / 4</span>
+</div>
+</section>
+<!-- ================= RIGHT COLUMN: Post Details & Conversation (38%) ================= -->
+<section aria-label="Post details and discussion" class="lg:w-[38%] w-full flex flex-col h-full bg-surface-container-lowest">
+<!-- Column Header: Creator Profile Row -->
+<header class="px-space-md py-3.5 flex items-center justify-between bg-surface-container-lowest shadow-[0_1px_0_rgba(46,32,52,0.06)] shrink-0 z-10">
+<div class="flex items-center gap-space-sm min-w-0">
+<!-- Author Avatar with Story Ring gradient -->
+<div class="relative shrink-0 p-0.5 rounded-full bg-gradient-to-tr from-primary via-secondary to-secondary-container">
+<img class="w-10 h-10 rounded-full object-cover border-2 border-surface-container-lowest" data-alt="Editorial portrait of Marcus Lindqvist, an outdoor landscape photographer in his late 20s wearing a charcoal wool beanie and field jacket against soft ambient studio lighting, serene artistic gaze." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw5x01BfOEeIj-RQUfXg2P9vGGabmeuD2gIhr1oHXzijsy94k1bsTRAf9tsNURuAHGE3qqUJ5PFVN5TViMCIP8LJG-z_tzd-zB4ujfZZ1dP2ZRFXvLLdA2BKPfTJuARS6uXp34T8BNxiQ1fwUx-4ElkMfI5OM7FXPDEf7510Wddpsh9JICgUScFu0Zly3VFERjrkLWb84Q8D_Jf2c4wQUxcXLDQQdyrvFBpUUgbl84QyeSmdh3ZYD1zg"/>
+</div>
+<!-- Author Identity & Location -->
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<a class="font-label-lg text-label-lg font-bold text-on-surface hover:text-primary transition-colors truncate" href="#">
+                  Marcus Lindqvist
+                </a>
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0" style="font-variation-settings: 'FILL' 1;" title="Verified Creator">verified</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="font-body-sm text-body-sm truncate">@marcus_lens</span>
+<span class="text-[10px] opacity-40">•</span>
+<span class="font-body-sm text-body-sm truncate flex items-center gap-0.5 text-secondary">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+                  Val Gardena, Dolomites
+                </span>
+</div>
+</div>
+</div>
+<!-- Creator Actions -->
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="px-3 py-1 rounded-xl bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed text-primary font-label-md text-label-md font-semibold transition-all" type="button">
+              Follow
+            </button>
+<button aria-label="More options for this post" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+</header>
+<!-- Scrollable Middle Section: Caption & Threaded Comments -->
+<div class="flex-1 overflow-y-auto px-space-md py-space-md flex flex-col gap-space-md overscroll-contain">
+<!-- Post Caption Item -->
+<article class="flex items-start gap-space-sm bg-surface-container-low/40 p-space-sm rounded-xl">
+<img class="w-8 h-8 rounded-full object-cover shrink-0 mt-0.5" data-alt="Editorial portrait thumbnail of Marcus Lindqvist with natural outdoor lighting and soft plum color tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDojs1dBtds-OopN3KwipgXTO0GQWixRk5DsUXOpzeTH7W-0tTwfUX12e0q0EX5gEWMOdALJgmlyy5fS2kb4oxYL4ZnTkP7xM6pPqfd7s7JGBk-SfgLqcem9ZbeQxl7y77PuQpYHRSiw0VrCJBmReYQgGtcW3R_s8MQ9aY0ZkfOapkj7eBcDRJV6sVlRtXY6lgqY8XU4A8gF6DusuteMjgvjYLpY1PyHEh8u5Pd_2zpRKV7IuT9oY2wJg"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-baseline gap-1.5 flex-wrap">
+<span class="font-label-md text-label-md font-bold text-on-surface">marcus_lens</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                  First light hitting the jagged peaks of Tre Cime di Lavaredo. Woke up at 4:30 AM in freezing mountain mist, but the silence up here was unforgettable. Which angle feels most immersive to you?
+                </span>
+</div>
+<!-- Editorial Hashtags -->
+<div class="mt-2 flex flex-wrap gap-1.5">
+<a class="font-label-sm text-label-sm text-primary hover:underline" href="#">#dolomites</a>
+<a class="font-label-sm text-label-sm text-primary hover:underline" href="#">#landscapephotography</a>
+<a class="font-label-sm text-label-sm text-primary hover:underline" href="#">#alps</a>
+<a class="font-label-sm text-label-sm text-primary hover:underline" href="#">#morninglight</a>
+<a class="font-label-sm text-label-sm text-secondary hover:underline" href="#">#visualarchivist</a>
+</div>
+<!-- Timestamp & Edit Metadata -->
+<div class="mt-2 flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>3 hours ago</span>
+<span>•</span>
+<span class="italic">Edited</span>
+<span>•</span>
+<span class="text-secondary font-medium">Series Collection #04</span>
+</div>
+</div>
+</article>
+<!-- Subtle Section Separation -->
+<div class="flex items-center gap-space-sm py-0.5">
+<div class="h-[1px] flex-1 bg-surface-container-high"></div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant/70 font-semibold text-[10px]">
+              Discussion (148)
+            </span>
+<div class="h-[1px] flex-1 bg-surface-container-high"></div>
+</div>
+<!-- Comments Feed -->
+<div class="flex flex-col gap-space-md">
+<!-- Comment 1 (Elena Vance - Verified) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start gap-space-sm group/comment">
+<img class="w-7 h-7 rounded-full object-cover shrink-0 mt-0.5" data-alt="Close-up editorial portrait of Elena Vance, creative director with sleek dark hair and minimalist aesthetic in soft muted plum background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwPJ1gNpTGQk2j04QqtkvmMceSrigLSoWTxY0Y_BXjK5K0aYfCBeU0AfRmaPWiEaoASi9sPkk5nq0Wte94SNLR8VOrt-Fqcr6Jcs_fg7U-pCnus4fu-EOUb4gyXseqgj7LqY4rlazbmOfpfTAgPKy15orYYuqGEW5RJaSjl4OwtKZ_5uqpzpvzPGztui1g88FU7hKj6XDWnXtpm9kYmdMIASRm3CT7P_lt_1QDBDfuW6WyjXOsYSFUgQ"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-md text-label-md font-bold text-on-surface">elena_rove</span>
+<span class="material-symbols-outlined text-primary text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-snug">
+                      The tonal contrast in the second layer of fog is breathtaking Marcus! Did you bracket these exposures?
+                    </span>
+</div>
+<div class="flex items-center gap-space-md mt-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span>2h ago</span>
+<button class="font-semibold hover:text-primary transition-colors" type="button">Reply</button>
+<span class="flex items-center gap-1 hover:text-tertiary cursor-pointer">
+<span>24 likes</span>
+</span>
+</div>
+</div>
+<button aria-label="Like Elena's comment" class="text-on-surface-variant hover:text-tertiary transition-colors pt-1" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<!-- Threaded Nested Reply: Marcus Lindqvist -->
+<div class="ml-9 pl-3 flex items-start gap-space-sm bg-surface-container-low/20 py-2 pr-2 rounded-xl">
+<img class="w-6 h-6 rounded-full object-cover shrink-0 mt-0.5" data-alt="Editorial portrait thumbnail of photographer Marcus Lindqvist." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB9zNFGHd-iyazJMRaiBNOyfa9pwJtohAS9v-lh13H9KD-J-nJmA20XAJMGkS0DqUrNDZf6aXRTwCH24SEn8GieUBtS3os3eJM-FE7J4-86lUKiW2hgopLD72TJXS0xZ55LuViYW4JVSdBNYMjyNaj7h5j0JwR3FqHO5vujdEFvzqrQd-s4g_bzNq610F8AGiilbjMlMr7CIPFCqT2PrHWW4uT7IgXbgnjD0FQ83J4LbCAScf6U67E_Q"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-md text-label-md font-bold text-primary">marcus_lens</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 bg-primary-fixed text-on-primary-fixed rounded text-[10px] font-bold">Author</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-snug">
+<span class="text-primary font-medium">@elena_rove</span> Yes, 3-shot HDR bracketed -2/0/+2 to capture both the sky highlights and shadow valley details!
+                    </span>
+</div>
+<div class="flex items-center gap-space-md mt-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span>1h ago</span>
+<button class="font-semibold hover:text-primary transition-colors" type="button">Reply</button>
+<span>8 likes</span>
+</div>
+</div>
+<button aria-label="Like Marcus's reply" class="text-on-surface-variant hover:text-tertiary transition-colors pt-0.5" type="button">
+<span class="material-symbols-outlined text-[15px]">favorite</span>
+</button>
+</div>
+</div>
+<!-- Comment 2: Sophia Chen -->
+<div class="flex items-start gap-space-sm group/comment">
+<img class="w-7 h-7 rounded-full object-cover shrink-0 mt-0.5" data-alt="Studio portrait of Sophia Chen, modern art curator with warm lighting, wearing deep amethyst knitwear." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB1u6m7cLkjKY_Q9XDd9vZA1v5MpgAyosAtMYUWYOPtBpPvG2VPcbRvVcsMeneboEsPgVVGfTkar_IAdPZIbbrmZSmfp2Yx8-Wtrw6jyRBYxkpKpNQy1C777wUuj1pryf6NwwRNIsE9EbPFmWqCNoBr-smZ1RSdJ1w9CHsoaBxoqRJl7OHwETzdZsr2nCfydA_Dl80zlyMQjyaRd8nmiVl_g6RSvax7XH9RDtsU7xOskc1lPIh9xuc2A"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-md text-label-md font-bold text-on-surface">sophia.studio</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-snug">
+                    Series 04 color palette goals. Pure poetry in stillness.
+                  </span>
+</div>
+<div class="flex items-center gap-space-md mt-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span>2h ago</span>
+<button class="font-semibold hover:text-primary transition-colors" type="button">Reply</button>
+<span>12 likes</span>
+</div>
+</div>
+<button aria-label="Like comment" class="text-on-surface-variant hover:text-tertiary transition-colors pt-1" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<!-- Comment 3: Kai Tanaka -->
+<div class="flex items-start gap-space-sm group/comment">
+<img class="w-7 h-7 rounded-full object-cover shrink-0 mt-0.5" data-alt="Portrait of Kai Tanaka, Tokyo-based architectural photographer with round wire spectacles and natural backlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeRNo9SoCVJyA5Rzr6jua2QAc7fzQaF497jeRG1hubWKIxtXe8WIOVgQc1dnxZoz2SN4rBFG4601k46Ncyl_mLO1AJTfoZUyswGYq5QFsirz3Lk7BXswzpoXqviWFt1yXVVxPV916e4_c1JRFcuR5F25WHrg2gmDOaVfaiqXiPVVbw1hg_H4mfnKQ0AtjWZQDDULtewtZxvffC9ncVi04Y8XV9ZAbBSLw8BRXygzmpOkaJ5ns_383uIw"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-md text-label-md font-bold text-on-surface">kai_film</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-snug">
+                    The light gradient across the limestone ridge is insane. Printing this one?
+                  </span>
+</div>
+<div class="flex items-center gap-space-md mt-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span>45m ago</span>
+<button class="font-semibold hover:text-primary transition-colors" type="button">Reply</button>
+<span>5 likes</span>
+</div>
+</div>
+<button aria-label="Like comment" class="text-on-surface-variant hover:text-tertiary transition-colors pt-1" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<!-- Comment 4: Mateo Korhonen -->
+<div class="flex items-start gap-space-sm group/comment">
+<img class="w-7 h-7 rounded-full object-cover shrink-0 mt-0.5" data-alt="Portrait of Mateo Korhonen, Nordic visual architect in muted monochrome style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdtJMQnye-CS0qKfCO0dSAk7E2R6X2tsK5z4_QKS3nESrnPqcC_3E82vrcXBAxVVxteuf9TvViwpFnMbbC7F_oYqVseD5AktgBb__cip9hYJPPCtpPxIjA4p47f-WpEVRowXO809mz2F3qZdYsuJFebr_oK-L8XuBBD4Nnkf8jtyTud17HHVmpDk5wDcG2_ZxG8OGKXILTMUskxb3VY_vvfBq5zRkDTN1RgdQYqigu8Paw-EMDIy2vrg"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-md text-label-md font-bold text-on-surface">korhonen_arch</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-snug">
+                    Incredible atmospheric perspective.
+                  </span>
+</div>
+<div class="flex items-center gap-space-md mt-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span>18m ago</span>
+<button class="font-semibold hover:text-primary transition-colors" type="button">Reply</button>
+<span>2 likes</span>
+</div>
+</div>
+<button aria-label="Like comment" class="text-on-surface-variant hover:text-tertiary transition-colors pt-1" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Engagement & Actions Bar (Sticky above composer) -->
+<div class="px-space-md py-3 bg-surface-container-low/50 shadow-[0_-1px_0_rgba(46,32,52,0.06)] shrink-0 flex flex-col gap-2">
+<!-- Quick Action Buttons -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<!-- Like Action with Active Filled State -->
+<button class="flex items-center gap-1.5 text-tertiary hover:scale-105 active:scale-95 transition-transform" id="like-btn" title="Unlike this post" type="button">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-md text-label-md font-bold">2,842</span>
+</button>
+<!-- Comment Jump -->
+<button class="flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors" title="Comment" type="button">
+<span class="material-symbols-outlined text-[24px]">chat_bubble</span>
+<span class="font-label-md text-label-md font-medium">148</span>
+</button>
+<!-- Share Action -->
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Share Perspective" type="button">
+<span class="material-symbols-outlined text-[22px]">send</span>
+</button>
+</div>
+<!-- Bookmark / Collection Save -->
+<button class="p-1 rounded-lg text-primary hover:scale-105 transition-transform" id="bookmark-btn" title="Saved to Collection 'Alpine Moods'" type="button">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<!-- Liked by Summary -->
+<div class="flex items-center gap-1.5 font-body-sm text-body-sm text-on-surface">
+<span class="text-on-surface-variant">Liked by</span>
+<a class="font-semibold text-on-surface hover:text-primary" href="#">elena_rove</a>,
+            <a class="font-semibold text-on-surface hover:text-primary" href="#">sophia.studio</a>
+<span class="text-on-surface-variant">and</span>
+<span class="font-semibold text-on-surface cursor-pointer hover:underline">2,840 others</span>
+</div>
+<!-- Formal Date Stamp -->
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant/70 text-[10px]">
+            OCTOBER 24, 2024
+          </div>
+</div>
+<!-- Comment Composer (Direct Inline Input) -->
+<footer class="px-space-md py-3 bg-surface-container-lowest shadow-[0_-1px_0_rgba(46,32,52,0.06)] shrink-0">
+<form class="flex items-center gap-space-sm" onsubmit="event.preventDefault();">
+<img alt="Elena Vance Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MVMBAgXoBuVyD0mHxI3OfH3OriKy92oIjJ_8Broab7K8Ygx7MRHAqTAUWTGdiLpySBSJwwC9t2kO7XAG5dnXibwya0QtqvNCPzY1TLm1gjpax7h9idNYE8O7RK-NdIvvMGnyJTElAed3qQtruvqwYN8KczySWfHY2suo1CVk03SZPseKbOhgGC8brXAEZQLx2n5dDGPHiN_bAZ--2qUi217y10hFvkFoGeLV1kaXun9pHuOkS-CGEg"/>
+<div class="relative flex-1 flex items-center">
+<input class="w-full pl-3 pr-16 py-2 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="comment-input" placeholder="Add a perspective or thoughtful reply..." type="text"/>
+<!-- Inline Emote/Media Triggers -->
+<div class="absolute right-2 flex items-center gap-1 text-on-surface-variant">
+<button aria-label="Add emoji" class="p-1 hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">sentiment_satisfied</span>
+</button>
+<button aria-label="Add GIF" class="p-1 hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">gif_box</span>
+</button>
+</div>
+</div>
+<!-- Submit CTA -->
+<button class="px-4 py-2 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm active:scale-95 shrink-0" type="submit">
+              Post
+            </button>
+</form>
+</footer>
+</section>
+</div>
+<!-- Related Perspectives Grid Section (Editorial Desktop Enrichment) -->
+<div class="mt-space-xl">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">More from this collection</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Tre Cime at First Light</h2>
+</div>
+<a class="font-label-md text-label-md text-primary font-semibold hover:underline flex items-center gap-1" href="#">
+<span>View all 8 items</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- 3-Column Editorial Grid matching ROVE Specifications -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Related Item 1 -->
+<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_2px_12px_rgba(46,32,52,0.04)] hover:shadow-[0_8px_24px_rgba(46,32,52,0.08)] transition-all flex flex-col">
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Low-angle view of misty pine forest reflecting in alpine lake under twilight purple dawn in the Dolomites." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxm5oDqZCFFBbAA7VUJR77-N-k4tSOtJaNHTbmzjS8sJWIOqgUkCuLr_PmX1IaGzTNIe7zR-0ojhwCKbR_LTcwXU_LcMwWwYZHW33x3_2u4u6etAhLcVXVolFzHAHyWo-RX1rwaBMNLXOt6ILytuHEFFf9zGheitPvntJwfDRLYGRVbGWAC12ZiulR8tS94xVCNMteWl92XbUkEL32Dl1NwxFshXI3VzCN4zO8mGcocf1TMORtu3Egcg')"></div>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-inverse-surface/60 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm">
+              Photo 2
+            </div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+              Reflections across Lago di Braies before the crowds arrived.
+            </p>
+<div class="mt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+                1.4k
+              </span>
+<span>18 comments</span>
+</div>
+</div>
+</article>
+<!-- Related Item 2 -->
+<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_2px_12px_rgba(46,32,52,0.04)] hover:shadow-[0_8px_24px_rgba(46,32,52,0.08)] transition-all flex flex-col">
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Dramatic telephoto shot of sharp mountain spires illuminated by cold blue hour mist with hiker on ridge." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDpwaDomjOVnWvFqym9cmsF2oX0vPXkqz_n2VYfCcY4TpJQ0oOfBjTEf9cF3reYFdsyTUfKTCO33vc8qxPcJ6UbG5RLVOnAsvzD70SUIjpSOGDq_oNP7njQeA3UQtPZtfWoMlD1jaWxuABIdCp0CKuLAraqF6G37o2wyiRDOygWpz4lrl5XUC6YoR2SIqWSvD8zgbWj6TJKCPcAeZiMrjpKEXOrWQvvqb0l_c2K4lPGNIqhzlaOEIpZ6w')"></div>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-inverse-surface/60 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm">
+              Photo 3
+            </div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+              Scale study: lonely hiker traversing the eastern pass toward Rifugio Auronzo.
+            </p>
+<div class="mt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+                982
+              </span>
+<span>34 comments</span>
+</div>
+</div>
+</article>
+<!-- Related Item 3 (Map Context / Location Anchor) -->
+<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_2px_12px_rgba(46,32,52,0.04)] hover:shadow-[0_8px_24px_rgba(46,32,52,0.08)] transition-all flex flex-col">
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container bg-cover bg-center" data-location="Tre Cime di Lavaredo, Italy" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMCWgUUvqyOwirWG2jC-SyqwgJnB-ZT8Ja9tw-O0DIH2fgglE8ts-K2kTla77svrBBWQCosoexGun-wWSE6sxCsrIXnQoPV1nBQSifiB8mfl2Hh5UaUOsJh0poB8YakKTTy-qoh_UqtHrDkwqhPnJCjTSh8NXjKepv1U22gegJdbroCgTIt-a2zgH2VwqUyi2u6h1f3BymL01Jo2afxdd7VysNyRLRrrehQk3-xIAyA5aGnz3onYii0A')">
+<div class="absolute inset-0 bg-primary/20 backdrop-brightness-95 flex items-center justify-center">
+<div class="px-3 py-1.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-md flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+<span>Open in ROVE Maps</span>
+</div>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Location Spot</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Tre Cime di Lavaredo</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Elevation: 2,999 m • South Tyrol, Italy
+            </p>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Like button toggle interaction
+    const likeBtn = document.getElementById('like-btn');
+    if (likeBtn) {
+      likeBtn.addEventListener('click', function() {
+        const icon = likeBtn.querySelector('.material-symbols-outlined');
+        const countSpan = likeBtn.querySelector('span:last-child');
+        const isFilled = icon.style.fontVariationSettings.includes("'FILL' 1");
+        
+        if (isFilled) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          likeBtn.classList.remove('text-tertiary');
+          likeBtn.classList.add('text-on-surface-variant');
+          countSpan.textContent = '2,841';
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          likeBtn.classList.add('text-tertiary');
+          likeBtn.classList.remove('text-on-surface-variant');
+          countSpan.textContent = '2,842';
+        }
+      });
+    }
+
+    // Bookmark toggle interaction
+    const bookmarkBtn = document.getElementById('bookmark-btn');
+    if (bookmarkBtn) {
+      bookmarkBtn.addEventListener('click', function() {
+        const icon = bookmarkBtn.querySelector('.material-symbols-outlined');
+        const isFilled = icon.style.fontVariationSettings.includes("'FILL' 1");
+        if (isFilled) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          bookmarkBtn.classList.remove('text-primary');
+          bookmarkBtn.classList.add('text-on-surface-variant');
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          bookmarkBtn.classList.add('text-primary');
+          bookmarkBtn.classList.remove('text-on-surface-variant');
+        }
+      });
+    }
+  })();
+</script></main></div></body></html>

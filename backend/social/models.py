@@ -1,0 +1,86 @@
+from django.db import models
+from django.contrib.auth.models import User
+class Profile(models.Model):
+    user=models.OneToOneField(User,on_delete=models.CASCADE,related_name='profile')
+    display_name=models.CharField(max_length=120,blank=True)
+    bio=models.CharField(max_length=160,blank=True)
+    website=models.URLField(blank=True)
+    avatar=models.ImageField(upload_to='avatars/',blank=True,null=True)
+    is_private=models.BooleanField(default=False)
+    comment_permission=models.CharField(max_length=32,default='Everyone')
+    mention_permission=models.CharField(max_length=32,default='Everyone')
+    show_activity_status=models.BooleanField(default=True)
+    def __str__(self): return self.user.username
+class Post(models.Model):
+    author=models.ForeignKey(User,on_delete=models.CASCADE,related_name='posts')
+    image=models.ImageField(upload_to='posts/',blank=True,null=True)
+    image_url=models.URLField(blank=True)
+    caption=models.TextField(blank=True)
+    location=models.CharField(max_length=160,blank=True)
+    created_at=models.DateTimeField(auto_now_add=True)
+    updated_at=models.DateTimeField(auto_now=True)
+    def __str__(self): return f'{self.author.username}: {self.caption[:30]}'
+class Comment(models.Model):
+    post=models.ForeignKey(Post,on_delete=models.CASCADE,related_name='comments')
+    author=models.ForeignKey(User,on_delete=models.CASCADE)
+    text=models.TextField(max_length=1000)
+    created_at=models.DateTimeField(auto_now_add=True)
+class Like(models.Model):
+    post=models.ForeignKey(Post,on_delete=models.CASCADE,related_name='likes')
+    user=models.ForeignKey(User,on_delete=models.CASCADE)
+    created_at=models.DateTimeField(auto_now_add=True)
+    class Meta: unique_together=('post','user')
+class Follow(models.Model):
+    follower=models.ForeignKey(User,on_delete=models.CASCADE,related_name='following_links')
+    following=models.ForeignKey(User,on_delete=models.CASCADE,related_name='follower_links')
+    created_at=models.DateTimeField(auto_now_add=True)
+    class Meta: unique_together=('follower','following')
+class Bookmark(models.Model):
+    user=models.ForeignKey(User,on_delete=models.CASCADE)
+    post=models.ForeignKey(Post,on_delete=models.CASCADE)
+    created_at=models.DateTimeField(auto_now_add=True)
+    class Meta: unique_together=('user','post')
+class Collection(models.Model):
+    user=models.ForeignKey(User,on_delete=models.CASCADE,related_name='collections')
+    name=models.CharField(max_length=60)
+    description=models.CharField(max_length=250,blank=True)
+    is_private=models.BooleanField(default=True)
+    posts=models.ManyToManyField(Post,blank=True,related_name='collections')
+    created_at=models.DateTimeField(auto_now_add=True)
+class DirectMessage(models.Model):
+    sender=models.ForeignKey(User,on_delete=models.CASCADE,related_name='sent_messages')
+    recipient=models.ForeignKey(User,on_delete=models.CASCADE,related_name='received_messages')
+    text=models.TextField(max_length=4000)
+    created_at=models.DateTimeField(auto_now_add=True)
+    is_read=models.BooleanField(default=False)
+class Notification(models.Model):
+    recipient=models.ForeignKey(User,on_delete=models.CASCADE,related_name='notifications')
+    actor=models.ForeignKey(User,on_delete=models.CASCADE,related_name='actions')
+    kind=models.CharField(max_length=32)
+    post=models.ForeignKey(Post,on_delete=models.CASCADE,null=True,blank=True)
+    text=models.CharField(max_length=250,blank=True)
+    is_read=models.BooleanField(default=False)
+    created_at=models.DateTimeField(auto_now_add=True)
+class Block(models.Model):
+    blocker=models.ForeignKey(User,on_delete=models.CASCADE,related_name='blocks_created')
+    blocked=models.ForeignKey(User,on_delete=models.CASCADE,related_name='blocked_by')
+    created_at=models.DateTimeField(auto_now_add=True)
+    class Meta: unique_together=('blocker','blocked')
+class Report(models.Model):
+    user=models.ForeignKey(User,on_delete=models.SET_NULL,null=True,blank=True)
+    report_type=models.CharField(max_length=32,default='content')
+    category=models.CharField(max_length=80,blank=True)
+    reason=models.CharField(max_length=100,blank=True)
+    title=models.CharField(max_length=200,blank=True)
+    details=models.TextField(blank=True)
+    created_at=models.DateTimeField(auto_now_add=True)
+    status=models.CharField(max_length=20,default='received')
+class SupportRequest(models.Model):
+    user=models.ForeignKey(User,on_delete=models.SET_NULL,null=True,blank=True)
+    name=models.CharField(max_length=120)
+    email=models.EmailField()
+    category=models.CharField(max_length=80,blank=True)
+    subject=models.CharField(max_length=200)
+    message=models.TextField()
+    created_at=models.DateTimeField(auto_now_add=True)
+    status=models.CharField(max_length=20,default='received')

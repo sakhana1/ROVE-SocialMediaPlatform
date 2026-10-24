@@ -1,0 +1,5 @@
+from django.urls import path,include
+from rest_framework.routers import DefaultRouter
+from . import views
+router=DefaultRouter();router.register('posts',views.PostViewSet,basename='post');router.register('collections',views.CollectionViewSet,basename='collection')
+urlpatterns=[path('',include(router.urls)),path('auth/register/',views.register),path('auth/me/',views.me),path('auth/password-reset/',views.password_reset),path('posts/<int:pk>/like/',views.like_post),path('posts/<int:pk>/bookmark/',views.bookmark_post),path('posts/<int:pk>/comments/',views.post_comments),path('profiles/me/',views.profile_detail,{'username':'me'}),path('profiles/<str:username>/',views.profile_detail),path('follows/',views.follows),path('bookmarks/',views.bookmarks),path('messages/',views.messages),path('notifications/',views.notifications),path('privacy/',views.privacy),path('blocked/',views.blocked),path('blocked/<str:username>/',views.blocked),path('reports/',views.create_report),path('support/',views.support)]
